@@ -2,7 +2,7 @@
 
 > Readable preview generated from the canonical TeX source.
 > It is for reading only; the `.tex` file remains the publication source.
-> Source SHA-256: `42095124abea7dde36357f829cca671a1a548ce5c550ecefe68374852117e0d2`
+> Source SHA-256: `1902dc564a0a2fc09cd6a04fa6d56943deae15453b79d9841a3998b462426014`
 
 ## Abstract
 
@@ -803,11 +803,16 @@ specialist review remains pending.
 The returned Aristotle feasibility project reports a successful build under
 Lean/mathlib v4.28.0.  Repository scans find no \texttt{sorry},
 \texttt{admit}, new mathematical axiom, or unsafe escape in its foundational
-POVM/PVM files, but its exact main theorem and two operator corollaries remain
-explicit \texttt{sorry} declarations.  Independent replay of that project is
-pending.  Accordingly, this manuscript does not claim that its main theorem
-is formally verified.  The source artifacts, audit reports, literature
-reports, Aristotle return, checksums, and build workflows are preserved in a
+POVM/PVM files.  Its declaration \texttt{thm\_main} matches the manuscript
+theorem, while \texttt{cor\_tuple} and \texttt{cor\_square} are stronger
+ambient-space surrogates: they place the compressed tuple and its unital
+functional calculus on the full Hilbert space rather than on
+\(\operatorname{ran} P\).  All three declarations remain explicit \texttt{sorry}
+declarations, and independent replay remains pending.
+Accordingly, this manuscript does not claim that its main theorem or operator
+corollaries are formally verified.  The source artifacts, audit reports,
+literature reports, Aristotle return, checksums, and build workflows are
+preserved in a
 research repository at
 \url{https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity}.
 Two separately run solution-aware literature searches found the
