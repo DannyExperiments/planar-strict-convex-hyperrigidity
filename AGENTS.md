@@ -27,9 +27,12 @@ the compression subspace to reduce the commuting self-adjoint tuple.
 - Keep the affine-dimension-three extension in its separate repository.
 - Rebuild the PDF from the current TeX source before publishing any PDF.
 - Record hashes, commands, tool versions, and AI contributions.
-- Preserve the Aristotle return at exact scope.  Its three explicit `sorry`
-  declarations must remain visible until replaced by real proofs; do not
-  treat the returned feasibility build as verification of the theorem.
+- Preserve the original Aristotle archive byte-for-byte.  The returned
+  `thm_main` declaration matches the manuscript scope, while `cor_tuple` and
+  `cor_square` are stronger ambient-space surrogates rather than exact
+  formulations on `ran P`.  Keep all three explicit `sorry` declarations
+  visible until replaced by real proofs, and do not treat the feasibility
+  build as verification of the theorem or either operator corollary.
 
 ## Paper rules
 
