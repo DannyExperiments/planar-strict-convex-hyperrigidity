@@ -22,6 +22,7 @@ body = re.sub(r"\\maketitle\s*", "", body)
 body = re.sub(r"\\begin\{abstract\}", "## Abstract\n\n", body)
 body = re.sub(r"\\end\{abstract\}", "", body)
 body = re.sub(r"\\section\*?\{([^}]+)\}", r"## \1", body)
+body = re.sub(r"\\paragraph\{([^}]+)\}", r"### \1", body)
 
 environment_names = {
     "theorem": "Theorem",
@@ -88,6 +89,7 @@ body = re.sub(
 body = re.sub(r"\\label\{[^}]+\}", "", body)
 body = re.sub(r"\\emph\{([^{}]+)\}", r"*\1*", body)
 body = re.sub(r"\\textbf\{([^{}]+)\}", r"**\1**", body)
+body = re.sub(r"\\url\{([^{}]+)\}", r"[\1](\1)", body)
 body = body.replace("~", " ")
 
 # Expand the document's private math macros so Markdown math renderers do not
