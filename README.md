@@ -14,6 +14,40 @@
 [Release notes](release/RELEASE_NOTES_v1.0.0.md) ·
 [Frozen evidence packet](release/planar-strict-convex-hyperrigidity-final-evidence-v4.zip)
 
+## What was resolved?
+
+The motivating open question is
+[Problem 2, “Equality case for compressed convex functional calculus”](https://rybindmitry.github.io/problems/2.html)
+in the CUHK-Shenzhen AI Math Problems database.  The database attributes the
+problem to Boris Bilich and records that it was added on June 1, 2026.
+
+Let \(X,Y\) be commuting positive contractions, let \(P\) be an orthogonal
+projection, and suppose the compressions
+
+\[
+A=PXP|_{\operatorname{ran}P},
+\qquad
+B=PYP|_{\operatorname{ran}P}
+\]
+
+commute.  The question asks whether, for a continuous strictly convex
+\(f:[0,1]^2\to\mathbb R\), the identity
+
+\[
+P f(X,Y)P|_{\operatorname{ran}P}=f(A,B)
+\]
+
+must imply
+
+\[
+PX=XP,\qquad PY=YP.
+\]
+
+**This paper proves that the answer is yes.**  It is an affirmative
+resolution, not a counterexample or disproof.  The main theorem below
+strengthens the result to POVM/PVM uniqueness on every compact convex set of
+affine dimension at most two.
+
 ## Main theorem
 
 Let \(K\) be a compact convex set of affine dimension at most two, let \(E\)
