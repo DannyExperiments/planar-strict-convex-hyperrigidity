@@ -2,7 +2,7 @@
 
 > Readable preview generated from the canonical TeX source.
 > It is for reading only; the `.tex` file remains the publication source.
-> Source SHA-256: `aa3c3bb9e673fa1d6c96be225f04670a900c4400d72eb1298bc92c0e07a745db`
+> Source SHA-256: `e5a8c072a8fc48b4c1df36e078e3395547677910442b42a48bfdb433e95123e9`
 
 ## Abstract
 
@@ -134,10 +134,11 @@ historical priority.
 
 Scherer's later spectrahedra theorem [SchererSpectrahedra] proves
 hyperrigidity of \(A(L)\) in \(C(\operatorname{ex} L)\) for compact spectrahedra \(L\)
-with closed extreme boundary.  It applies to graph hulls \(L_g\) that happen
-to satisfy those additional hypotheses, but an arbitrary graph hull of a
-continuous strictly convex function need not be a spectrahedron.  Thus that
-result is closely related but does not subsume Theorem `thm:main`.
+with closed extreme boundary.  Since \(\operatorname{ex} L_g=\Gamma_g\) is already compact,
+it applies here precisely when the graph hull \(L_g\) is a spectrahedron.
+An arbitrary graph hull of a continuous strictly convex function need not be
+a spectrahedron.  Thus that result is closely related but does not subsume
+Theorem `thm:main`.
 
 ## Interior localization
 
@@ -536,7 +537,9 @@ $$
  \qquad(S\in\mathfrak B(Z)).                       \tag{3.3}
 $$
 
-The evaluation map \(\nu\mapsto\nu(S)\) is Borel for Borel \(S\).
+The evaluation map \(\nu\mapsto\nu(S)\) is Borel for Borel \(S\);
+see, for example, the standard probability-kernel machinery in
+[Kallenberg].
 For \(\xi,\eta\in\mathcal H\), scalarize \(G\) by
 \(G_{\xi,\eta}(S)=\left\langle G(S)\xi,\eta\right\rangle\).  The usual bounded-kernel Fubini
 identity applies first to the positive diagonal measures
@@ -560,8 +563,10 @@ Indeed, a PVM \(N\) on \(Z\) induces a representation
 completely positive map \(\Phi(h)=\int_Zh\,dM\).  Agreement of their affine
 moments says \(\Phi|_{A(K)}=\rho|_{A(K)}\).  Hyperrigidity gives
 \(\Phi=\rho\), and scalar regular-measure uniqueness followed by
-polarization gives \(M=N\).  Hence the following POVM/PVM form is exactly
-the consequence required here.
+polarization gives \(M=N\).  We use here the standard POVM--UCP
+correspondence for commutative \(C^*\)-algebras; see
+[Paulsen].  Hence the following POVM/PVM form is exactly the
+consequence required here.
 
 ### Theorem: Scherer
 
@@ -785,19 +790,24 @@ acting Hilbert space; see
 ## Verification and provenance status
 
 The ordinary proof underlying this manuscript was frozen before review and
-subjected to multiple independent AI-assisted hostile audits.  The final
-audit passed Theorem `thm:main` and its corollaries and identified the
-zero-dimensional and singleton omissions now repaired in
-Lemmas `lem:energy` and `lem:interval`.  These audits are not human
-peer review, and specialist review remains pending.
+subjected to multiple independent AI-assisted hostile audits.  An initial
+assembled-manuscript audit passed Theorem `thm:main` and its corollaries
+while identifying the zero-dimensional and singleton omissions repaired in
+Lemmas `lem:energy` and `lem:interval`.  A subsequent audit of the
+repaired manuscript passed all fourteen numbered mathematical results and
+classified the submission as repairable only because of release-metadata
+defects addressed in this version.  These audits are not human peer review,
+and specialist review remains pending.
 
-An Aristotle feasibility run produced sorry-free Lean foundations for
-POVMs, PVMs, diagonal scalar measures, and polarization, but left the exact
-main theorem and the two operator corollaries as explicit \texttt{sorry}
-declarations.  Accordingly, this manuscript does not claim that its main
-theorem is formally verified.  The source artifacts, audit reports,
-literature reports, Aristotle return, checksums, and build workflows are
-preserved at
+The returned Aristotle feasibility project reports a successful build under
+Lean/mathlib v4.28.0.  Repository scans find no \texttt{sorry},
+\texttt{admit}, new mathematical axiom, or unsafe escape in its foundational
+POVM/PVM files, but its exact main theorem and two operator corollaries remain
+explicit \texttt{sorry} declarations.  Independent replay of that project is
+pending.  Accordingly, this manuscript does not claim that its main theorem
+is formally verified.  The source artifacts, audit reports, literature
+reports, Aristotle return, checksums, and build workflows are preserved in a
+private pre-release repository at
 \url{https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity}.
 Two independent solution-aware literature searches found the
 dimension-one case in prior work and located no prior theorem with the full
@@ -823,6 +833,17 @@ R. G. Douglas,
 *On majorization, factorization, and range inclusion of operators on
 Hilbert space*,
 Proc. Amer. Math. Soc. **17** (1966), 413--415.
+
+- **Kallenberg.**
+O. Kallenberg,
+*Foundations of Modern Probability*,
+3rd ed., Springer, Cham, 2021.
+
+- **Paulsen.**
+V. I. Paulsen,
+*Completely Bounded Maps and Operator Algebras*,
+Cambridge Studies in Advanced Mathematics 78,
+Cambridge University Press, Cambridge, 2002.
 
 - **PietrzyckiStochel.**
 P. Pietrzycki and J. Stochel,

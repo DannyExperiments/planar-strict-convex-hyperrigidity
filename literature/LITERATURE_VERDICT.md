@@ -17,7 +17,8 @@ The accurate status is therefore:
 - **Mathematical proof status:** the frozen ordinary proof passed two audits
   at each of its A and B stages. The first assembled manuscript also passed
   a hostile audit subject to two local repairs, both incorporated. A fresh
-  audit of the repaired manuscript is pending.
+  audit of the repaired manuscript passed all fourteen numbered mathematical
+  results and the stated literature-scope comparisons.
 - **Affine dimension zero or one:** previously known, principally from
   Brown's one-variable strict-convexity theorem.
 - **Affine dimension two, special \(g\):** previously known in subclasses,

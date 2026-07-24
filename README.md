@@ -7,10 +7,14 @@
 > omitted edge cases, both repaired in the current paper.  Two independent
 > solution-aware literature searches found no prior theorem covering the full
 > affine-dimension-two claim. A fresh hostile audit of the repaired manuscript
-> is in progress; specialist human review is still pending.
-> Aristotle produced sorry-free POVM/PVM foundations but did not formalize the
-> main theorem or its corollaries. No full Lean verification or absolute
-> historical-priority claim is made.
+> passed all fourteen numbered mathematical results and requested only
+> disclosure, provenance, citation, and release-wording repairs, now
+> incorporated. Specialist human review is still pending.
+> The returned Aristotle project reports a successful Lean/mathlib v4.28.0
+> build and contains a foundational layer without disclosed proof escapes, but
+> it did not formalize the main theorem or its corollaries; independent replay
+> remains pending. No full Lean verification or absolute historical-priority
+> claim is made.
 
 ## Main theorem
 

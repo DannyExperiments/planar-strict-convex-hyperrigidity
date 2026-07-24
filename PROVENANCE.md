@@ -19,8 +19,9 @@ attachments.  They must not be edited.
 | `audits/Artifact_B_hostile_audit_1.md` | Planar extension and dependency audit | `a75868954291282452030735d7c30fd687a45b22b95df8bd8375833b294e39c6` |
 | `audits/Artifact_B_hostile_audit_2.md` | Fresh planar extension audit | `67f5c4b32a27c4030ccb3f325cf67bc64e52ca8942fdbcef7da565dfb4e1c24c` |
 | `audits/final_hostile_referee_report.md` | Final manuscript-level hostile audit; attachment wrapper preserved verbatim | `c4c9dd5befe18e0be89eda8e8a389986d07a49e3ee910554e0577bdadd48ff07` |
+| `audits/repaired_manuscript_hostile_audit.md` | Repaired-manuscript hostile audit; all fourteen numbered mathematical results passed | `52cbcb253c3b33089f2c8285c95f29c3545749d8ce094f9522669728b8b15822` |
 
-All five reports are AI-generated audits, not human referee reports.
+All six reports are AI-generated audits, not human referee reports.
 
 ## Aristotle record
 
@@ -32,9 +33,9 @@ The Aristotle return contains sorry-free POVM/PVM foundations but leaves
 `thm_main`, `cor_tuple`, and `cor_square` as explicit `sorry` declarations.
 It is not a formal verification of the manuscript theorem.
 
-## Current paper build record
+## Superseded pre-audit-repair paper build record
 
-The repaired TeX was compiled by GitHub Actions workflow run
+The preceding TeX revision was compiled by GitHub Actions workflow run
 `30060796309` from remote commit
 `88d5d25650b658fa592d44bcd354cdaf32940964`.
 
@@ -43,6 +44,10 @@ The repaired TeX was compiled by GitHub Actions workflow run
 | GitHub Actions artifact ID | `8584479061` |
 | Artifact ZIP SHA-256 | `71ce3879474bb737ea93b98d33e6e4bda01224533879b5caf2659cfa733b761f` |
 | Compiled PDF SHA-256 | `300f4189f08c36e9eaebeb6c74e6dcab513f6fff1b79861fbeeb45ecc8658e02` |
+
+This build predates the final disclosure, citation, and release-wording
+repairs requested by `repaired_manuscript_hostile_audit.md`; it is retained
+only as provenance and is not the current release candidate.
 
 The PDF has eight A4 pages. All eight rendered pages were byte-identical to
 the visually inspected run `30060525854`, for which no clipping, overlap,
@@ -79,9 +84,12 @@ planar compact convex \(K\) with diffuse representations.
    identified two local edge cases, repaired in the current paper.
 8. Aristotle returned a compiling feasibility project with a sorry-free
    foundational layer and three unproved headline declarations.
-9. The repaired manuscript was sent to a fresh hostile audit; that return is
-   pending and is not yet part of this repository.
-10. Specialist human review and absolute historical-priority review remain
+9. A fresh hostile audit of the repaired manuscript passed all fourteen
+   numbered mathematical results and requested only documentary, citation,
+   and private-release wording repairs.
+10. The fresh report was preserved verbatim and its valid release repairs
+    were incorporated without altering a numbered mathematical result.
+11. Specialist human review and absolute historical-priority review remain
    pending.
 
 ## Attribution boundary

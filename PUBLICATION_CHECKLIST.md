@@ -10,7 +10,10 @@
 - [x] Final manuscript-level hostile audit completed.
 - [x] Final audit's \(d=0\) energy-lemma omission repaired.
 - [x] Final audit's singleton-interval omission repaired.
-- [ ] Fresh hostile audit of the repaired manuscript returned and preserved.
+- [x] Fresh hostile audit of the repaired manuscript returned and preserved.
+- [x] Fresh audit's disclosure, provenance, and release-wording repairs
+      incorporated.
+- [x] Standard probability-kernel and POVM--UCP references added.
 - [ ] Specialist human review obtained.
 
 ## Literature
@@ -32,11 +35,11 @@
 ## Paper and repository
 
 - [x] TeX paper complete.
-- [x] Fresh PDF compiled from the current TeX.
-- [x] Every PDF page visually inspected.
+- [ ] Fresh PDF compiled after the repaired-manuscript audit.
+- [ ] Every page of the post-audit PDF visually inspected.
 - [x] Hash manifest regenerated after final audit repairs.
 - [x] Verification script passes after final audit repairs.
 - [x] Privacy and credential-pattern scan passes.
 - [x] AI disclosure updated with the available model, curator, audit, and
       Aristotle information.
-- [ ] Repository remains private until release approval.
+- [x] Repository remains private pending release approval.

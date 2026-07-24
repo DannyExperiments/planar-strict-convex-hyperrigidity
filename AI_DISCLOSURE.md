@@ -11,6 +11,10 @@ the repository and paper files.
 DannyExperiments is the human curator and conventional manuscript author.
 The paper credits GPT-5.6 Pro for generation of the ordinary proof and Codex
 for manuscript preparation, audit coordination, and provenance tooling.
+The repaired-manuscript audit dated 2026-07-24 passed all fourteen numbered
+mathematical results and classified the submission overall as repairable
+because of documentary and release-wording defects. Those defects were
+repaired after preserving the report verbatim.
 
 No AI audit is represented as human peer review.  No theorem is represented
 as Lean-verified until the exact formal statement is kernel-checked without
@@ -25,10 +29,12 @@ recorded as “apparently new,” not as proof of historical priority.
 
 An exact-scope formalization request was submitted to Aristotle by Harmonic
 as request `6f13344c-d5b5-4805-ab3d-e779ff868afb`.  The returned project
-contains sorry-free POVM/PVM foundations, but the main theorem and two
-operator corollaries remain explicit `sorry` declarations.  The returned
-archive is pinned to Lean/mathlib v4.28.0 rather than the requested v4.30.0.
-No full Lean verification is claimed.
+reports a successful build and its foundational POVM/PVM files contain no
+`sorry`, `admit`, new mathematical axiom, or unsafe escape under the
+repository's declaration scan. The main theorem and two operator corollaries
+remain explicit `sorry` declarations. The returned archive is pinned to
+Lean/mathlib v4.28.0 rather than the requested v4.30.0, and independent replay
+is pending. No full Lean verification is claimed.
 
 No human specialist review has yet been obtained.  Historical priority is
 not claimed beyond the preserved negative literature searches.
