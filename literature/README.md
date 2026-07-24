@@ -5,7 +5,7 @@ in this directory. They compare the proposed theorem with one-variable
 compression rigidity, scalar Korovkin results, planar extreme-boundary
 hyperrigidity, monomial hyperrigidity, and spectrahedral hyperrigidity.
 
-The two final searches independently agree on the following division:
+The two separately run final searches agree on the following division:
 
 - affine dimension at most one is already covered by Brown's one-variable
   theorem, and also by Scherer's theorem after the graph-hull lift;
