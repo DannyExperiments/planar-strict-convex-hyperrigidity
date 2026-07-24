@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Verify frozen sources and paper hygiene
         run: bash ./scripts/verify.sh
       - name: Remove any pre-existing PDF

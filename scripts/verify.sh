@@ -10,20 +10,20 @@ python3 scripts/tex_sanity.py
 
 aristotle_root="formalization/aristotle_return_v1/RequestProject"
 if [[ -d "$aristotle_root" ]]; then
-  if rg -n '\b(sorry|admit)\b|^[[:space:]]*(axiom|constant)\b|\bunsafe\b' \
+  if grep -nE '(^|[^[:alnum:]_])(sorry|admit|unsafe)([^[:alnum:]_]|$)|^[[:space:]]*(axiom|constant)([[:space:]]|$)' \
       "$aristotle_root/POVM.lean" "$aristotle_root/Main.lean"; then
     echo "Unexpected Lean proof escape in the claimed foundational layer." >&2
     exit 1
   fi
 
-  if rg -n '\b(admit|unsafe)\b|^[[:space:]]*(axiom|constant)\b' \
+  if grep -nE '(^|[^[:alnum:]_])(admit|unsafe)([^[:alnum:]_]|$)|^[[:space:]]*(axiom|constant)([[:space:]]|$)' \
       "$aristotle_root/Statements.lean"; then
     echo "Unexpected non-sorry Lean escape in the exact-scope statements." >&2
     exit 1
   fi
 
   sorry_count="$(
-    rg -c '^[[:space:]]*sorry[[:space:]]*$' \
+    grep -cE '^[[:space:]]*sorry[[:space:]]*$' \
       "$aristotle_root/Statements.lean"
   )"
   if [[ "$sorry_count" != "3" ]]; then
