@@ -4,6 +4,7 @@ build/
 tmp/
 output/
 release/final_release_evidence_v1/
+release/final_release_evidence_v2/
 *.aux
 *.bbl
 *.blg
