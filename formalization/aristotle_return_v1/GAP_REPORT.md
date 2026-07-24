@@ -2,8 +2,9 @@
 
 This report accompanies the Lean formalization attempt of the manuscript
 *"Planar Strictly Convex Hyperrigidity"* (Theorem 1.1, Corollaries 1.2 / 5.1 / 1.3).
-It follows the exact-scope, integrity-first protocol requested: it does **not**
-substitute a weaker "verified" result for the universal theorem.
+It records the exact-scope, integrity-first protocol requested and the scope
+actually achieved by the return. It does **not** present any declaration with
+`sorry` as a verified result.
 
 ## E. Headline status (read this first)
 
@@ -14,13 +15,16 @@ in §C).  What has been delivered is:
 * **genuine, fully-proved (no `sorry`) foundational theory** of normalized POVMs and
   PVMs on an arbitrary Hilbert space, including the diagonal scalar spectral measure
   and the polarization bridge that makes it faithful (`RequestProject/POVM.lean`);
-* **faithful, full-scope Lean *statements*** of the main theorem and the operator
-  corollary, connected to that foundation, with the deep proofs left explicitly as
-  `sorry` (`RequestProject/Statements.lean`).
+* a manuscript-scope Lean statement of the main theorem, connected to that
+  foundation, with the proof left explicitly as `sorry`; and
+* two stronger ambient-space operator surrogates, also left as `sorry`
+  (`RequestProject/Statements.lean`).
 
 No finite-dimensional, separable, atomic, matrix, polygonal, smooth, or strongly
-convex surrogate was used. Hypotheses were not strengthened. No new axiom, no
-`admit`, no `unsafe`, no `@[implemented_by]` was introduced.
+convex surrogate was used. The operator declarations nevertheless strengthen
+the manuscript corollaries by putting the compressed tuple and its unital
+calculus on the full ambient Hilbert space rather than on `ran P`. No new
+axiom, no `admit`, no `unsafe`, no `@[implemented_by]` was introduced.
 
 ## D. Exact versions and build
 
@@ -83,7 +87,7 @@ File `RequestProject/POVM.lean`:
 These are reusable and make no separability/atomicity/finite-dimensionality
 assumption.
 
-## A′. Faithful full-scope statements (proofs are `sorry`)
+## A′. Headline declarations (proofs are `sorry`)
 
 File `RequestProject/Statements.lean`:
 
@@ -93,13 +97,12 @@ File `RequestProject/Statements.lean`:
   strictly convex `g`; agreement on all affine functions and on `g` ⟹ `E.Agree F`.
 * `JointCFC` — an explicit interface for the **joint continuous functional calculus**
   of a commuting self-adjoint tuple (the object the missing joint spectral theorem
-  produces and pins down uniquely). Used to state the operator corollary faithfully
-  without silently assuming finite rank/atomicity.
-* `cor_tuple` — **Corollary 5.1**: compression of a commuting self-adjoint tuple with
-  joint spectrum in a `dim ≤ 2` compact convex `K`; equality under compression for one
-  strictly convex `g` forces `P` to reduce every `T j`.
-* `cor_square` — **Corollary 1.2**: the `m = 2`, `K = [0,1]²` case (commuting positive
-  contractions `X, Y`).
+  produces and pins down uniquely).
+* `cor_tuple` — an ambient-space surrogate related to **Corollary 5.1**.
+  Both the compressed tuple and its unital calculus act on the full Hilbert
+  space, which imposes a complement condition absent from the manuscript.
+* `cor_square` — the corresponding `m = 2`, `K = [0,1]²` ambient-space
+  surrogate related to **Corollary 1.2**.
 * Corollary 1.3 (hyperrigidity of `S_g` in `C(K)`) is discussed but not stated,
   because the operator-system / unique-extension-property equivalence it needs is
   absent from Mathlib (see §C).
@@ -171,8 +174,11 @@ end-to-end):**
 
 ## Summary
 
-The exact scope has been pinned down in Lean with faithful statements and a genuine,
-sorry-free POVM/PVM foundation. The full theorem and its operator corollary are
-**not** proved and are explicitly marked `sorry`; completing them requires building
-the missing Mathlib infrastructure above and formalizing (or importing) Scherer's
-planar theorem. No weaker result is claimed as a proof of the manuscript's theorem.
+The main theorem's scope has been pinned down in Lean, together with a
+genuine, sorry-free POVM/PVM foundation. The two operator declarations are
+stronger ambient-space surrogates, not exact manuscript corollaries. The main
+theorem and both surrogates are **not** proved and are explicitly marked
+`sorry`; completing the manuscript statements requires the missing Mathlib
+infrastructure above, exact `ran P` declarations, and a formalization (or
+import) of Scherer's planar theorem. No declaration is claimed as a proof of
+the manuscript's theorem.
