@@ -1,0 +1,64 @@
+Formalize the exact main theorem and its operator corollary from the attached
+manuscript in Lean 4.30.0 with mathlib v4.30.0.
+
+This is an exact-scope task. Do not silently replace the theorem by a
+finite-dimensional matrix statement, a finite measurable space, an atomic
+spectral measure, a separable Hilbert space, a differentiable or strongly
+convex function, a polygonal domain, or a theorem with additional
+hypotheses.
+
+The required mathematical scope is:
+
+1. K is an arbitrary compact convex set of affine dimension at most two.
+2. g : K -> R is continuous and strictly convex.
+3. E is a normalized positive-operator-valued Borel measure and F is a
+   projection-valued Borel measure on K, acting on an arbitrary Hilbert
+   space.
+4. Equality of the E- and F-integrals of every affine function and of g must
+   imply E = F.
+5. Derive the manuscript's compressed-functional-calculus corollary for
+   commuting positive contractions without finite-rank, separability, or
+   atomicity assumptions.
+
+You may use an equivalent unital-completely-positive-map/representation
+formulation only if you formally prove or cite within mathlib the exact
+equivalence needed to recover the stated POVM/PVM theorem.
+
+Proof-integrity requirements:
+
+- no sorry;
+- no admit;
+- no new axiom or constant assuming mathematical content;
+- no unsafe escape;
+- no finite computation as a replacement for the universal theorem;
+- no undocumented strengthening of hypotheses;
+- no claim of completion unless a clean `lake build` exits successfully.
+
+Begin with an API and feasibility pass. Identify whether mathlib already
+contains the exact infrastructure for:
+
+- operator-valued measures and their Borel integrals;
+- PVMs and joint spectral calculus;
+- Stinespring or Naimark dilation;
+- Douglas factorization in the required operator setting;
+- measurable subgradient selection;
+- Minty parametrization and the covering/energy argument;
+- hyperrigidity or unique-extension formulations.
+
+If the exact theorem cannot presently be expressed or proved without
+developing substantial missing infrastructure, do not manufacture a weaker
+"verified" result. Instead return:
+
+A. a compiling Lean project containing every exact definition and
+   load-bearing lemma that can honestly be completed;
+B. an exact dependency graph for the remaining declarations;
+C. a gap report naming missing mathlib APIs and distinguishing missing
+   infrastructure from unresolved mathematics;
+D. the complete build log and exact Lean/mathlib versions;
+E. an explicit statement that the full manuscript theorem remains
+   unformalized.
+
+If the full theorem is completed, return the complete project archive,
+fully-qualified theorem names, `lake build` output, and a grep report showing
+the absence of `sorry`, `admit`, new mathematical axioms/constants, and
+`unsafe`.
