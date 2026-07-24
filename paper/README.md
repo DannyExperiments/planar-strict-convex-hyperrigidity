@@ -11,13 +11,13 @@ Readable in-app copy:
 Regenerate the reading copy after changing the TeX:
 
 ```bash
-../scripts/make_readable_preview.py
+python3 ../scripts/make_readable_preview.py
 ```
 
 Local build:
 
 ```bash
-../scripts/compile_pdf.sh
+bash ../scripts/compile_pdf.sh
 ```
 
 The build script removes any prior PDF before compilation. It accepts
@@ -25,5 +25,7 @@ The build script removes any prior PDF before compilation. It accepts
 installed. The GitHub Actions workflow performs a fresh build and uploads
 the resulting PDF as an artifact.
 
-No author entry is present by design. Authorship and acknowledgements must be
-settled explicitly before public submission.
+The manuscript identifies DannyExperiments as the conventional author and
+human curator, and explicitly credits GPT-5.6 Pro and Codex for their stated
+roles. Keep the paper, `AI_DISCLOSURE.md`, and `PROVENANCE.md` synchronized if
+that metadata changes.

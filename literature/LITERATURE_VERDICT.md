@@ -15,11 +15,14 @@ of the following simultaneously:
 The accurate status is therefore:
 
 - **Mathematical proof status:** the frozen ordinary proof passed two audits
-  at each of its A and B stages.
+  at each of its A and B stages. The first assembled manuscript also passed
+  a hostile audit subject to two local repairs, both incorporated. A fresh
+  audit of the repaired manuscript is pending.
 - **Affine dimension zero or one:** previously known, principally from
   Brown's one-variable strict-convexity theorem.
 - **Affine dimension two, special \(g\):** previously known in subclasses,
-  including positive-definite quadratics and certain radial/monomial cases.
+  including positive-definite quadratics and certain explicitly specified
+  monomial systems in a single normal generator.
 - **Affine dimension two, arbitrary \(g\):** no prior theorem located;
   **apparently new**, with moderate-to-high literature confidence.
 - **Absolute historical priority:** not established. No “first proof” claim
@@ -53,6 +56,11 @@ If \(g\) is nonaffine, then
 This explains the exact prior-art boundary: Scherer's planar theorem covers
 the lift of a one-dimensional \(K\), while a planar \(K\) produces a
 three-dimensional graph hull not covered by that theorem.
+
+Scherer's 2026 spectrahedra theorem covers a compact spectrahedral graph hull
+with closed extreme boundary.  It does not cover an arbitrary graph hull
+\(L_g\), because no spectrahedral representation is available for a general
+continuous strictly convex \(g\).
 
 ## Independently checked primary-source points
 

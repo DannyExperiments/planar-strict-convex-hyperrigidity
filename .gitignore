@@ -2,6 +2,7 @@
 .lake/
 build/
 tmp/
+output/
 *.aux
 *.bbl
 *.blg
@@ -11,4 +12,3 @@ tmp/
 *.out
 *.synctex.gz
 *.toc
-

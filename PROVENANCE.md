@@ -18,8 +18,19 @@ attachments.  They must not be edited.
 | `audits/Artifact_A_hostile_audit_2.md` | Square/polytope proof | `c94939043d9fcee4c7eaa0c50e3154ad7cc59357a5d1fb665e28d5f6c8efd59d` |
 | `audits/Artifact_B_hostile_audit_1.md` | Planar extension and dependency audit | `a75868954291282452030735d7c30fd687a45b22b95df8bd8375833b294e39c6` |
 | `audits/Artifact_B_hostile_audit_2.md` | Fresh planar extension audit | `67f5c4b32a27c4030ccb3f325cf67bc64e52ca8942fdbcef7da565dfb4e1c24c` |
+| `audits/final_hostile_referee_report.md` | Final manuscript-level hostile audit; attachment wrapper preserved verbatim | `c4c9dd5befe18e0be89eda8e8a389986d07a49e3ee910554e0577bdadd48ff07` |
 
-All four reports are AI-generated audits, not human referee reports.
+All five reports are AI-generated audits, not human referee reports.
+
+## Aristotle record
+
+| Artifact | Role | SHA-256 |
+|---|---|---|
+| `formalization/6f13344c-d5b5-4805-ab3d-e779ff868afb-aristotle.tar.gz` | Exact returned Aristotle project archive | `1887d86be11c597cfcbc604346b3efb55260cb3bbecbf69720443c5210b6bc1f` |
+
+The Aristotle return contains sorry-free POVM/PVM foundations but leaves
+`thm_main`, `cor_tuple`, and `cor_square` as explicit `sorry` declarations.
+It is not a formal verification of the manuscript theorem.
 
 ## Final literature record
 
@@ -45,12 +56,20 @@ planar compact convex \(K\) with diffuse representations.
    different repository.
 6. Two final solution-aware literature searches found no prior full planar
    theorem, while identifying the one-dimensional case as previously known.
-7. Specialist human review and absolute historical-priority review remain
+7. A final manuscript-level hostile audit passed the main theorem and
+   identified two local edge cases, repaired in the current paper.
+8. Aristotle returned a compiling feasibility project with a sorry-free
+   foundational layer and three unproved headline declarations.
+9. The repaired manuscript was sent to a fresh hostile audit; that return is
+   pending and is not yet part of this repository.
+10. Specialist human review and absolute historical-priority review remain
    pending.
 
 ## Attribution boundary
 
 The mathematical drafts were generated and repaired with GPT-5.6 Pro under
-human direction.  Codex organized the audit trail, verified hashes, and is
-preparing the repository and paper.  Final authorship and contribution
-language have not been decided.
+human direction.  Codex organized the audit trail, verified hashes, repaired
+the audited manuscript, and prepared the repository and paper.
+DannyExperiments is the conventional manuscript author and human curator;
+the model contributions are disclosed explicitly in the paper and
+`AI_DISCLOSURE.md`.

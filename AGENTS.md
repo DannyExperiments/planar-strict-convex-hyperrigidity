@@ -10,7 +10,7 @@ POVM/PVM rigidity theorem and its compressed functional-calculus corollary.
 Let `K` be a compact convex set of affine dimension at most two, let `E` be a
 normalized POVM on `K`, let `F` be a PVM on `K`, and let `g : K -> R` be
 continuous and strictly convex.  If `E` and `F` agree on every affine
-function and on `g`, the proposed theorem concludes `E = F`.
+function and on `g`, the theorem concludes `E = F`.
 
 The operator corollary says that equality under compression for `g` forces
 the compression subspace to reduce the commuting self-adjoint tuple.
@@ -27,15 +27,18 @@ the compression subspace to reduce the commuting self-adjoint tuple.
 - Keep the affine-dimension-three extension in its separate repository.
 - Rebuild the PDF from the current TeX source before publishing any PDF.
 - Record hashes, commands, tool versions, and AI contributions.
+- Preserve the Aristotle return at exact scope.  Its three explicit `sorry`
+  declarations must remain visible until replaced by real proofs; do not
+  treat the returned feasibility build as verification of the theorem.
 
 ## Paper rules
 
 - Use `amsart` with `a4paper` and one-inch margins.
-- Use no author entry until attribution is resolved.
+- Use the resolved human-curator authorship and explicit model-contribution
+  disclosure recorded in `AI_DISCLOSURE.md`.
 - Keep the abstract to at most six sentences.
 - State the exact POVM/PVM theorem before the operator corollary.
 - State Scherer's boundary theorem precisely as the sole external
   hyperrigidity input.
 - Distinguish mathematical validity, formal verification, human review, and
   novelty.
-

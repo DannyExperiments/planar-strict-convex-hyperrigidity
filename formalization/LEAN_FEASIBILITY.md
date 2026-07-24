@@ -22,7 +22,8 @@ The recommended formalization order is:
 
 Until all required infrastructure exists and the exact declarations compile
 without `sorry`, `admit`, new mathematical axioms, or unsafe escapes, the
-repository must say “ordinary proof audited; Lean formalization pending.”
+repository must say “ordinary proof audited; exact Lean theorem
+unformalized.”
 
 ## Local mathlib inspection
 
@@ -38,3 +39,16 @@ of the manuscript.
 `ARISTOTLE_EXACT_SCOPE_PROMPT.txt` freezes an exact-scope feasibility request.
 It expressly forbids substituting a finite-dimensional or atomic special
 case for verification of the manuscript theorem.
+
+## Aristotle return
+
+Aristotle request `6f13344c-d5b5-4805-ab3d-e779ff868afb` completed on
+2026-07-24.  Its return is preserved under `aristotle_return_v1/`.
+
+The return provides a sorry-free POVM/PVM foundational layer, including
+diagonal scalar measures and a polarization bridge.  It does not prove the
+manuscript theorem: `thm_main`, `cor_tuple`, and `cor_square` remain explicit
+`sorry` declarations, and the hyperrigidity corollary is not formalized.
+The archive is pinned to Lean/mathlib v4.28.0 rather than the requested
+v4.30.0.  Aristotle reported a successful build of that project; an
+independent local replay remains pending.

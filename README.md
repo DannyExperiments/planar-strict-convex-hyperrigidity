@@ -2,13 +2,17 @@
 
 > **Status: private research preparation.**
 >
-> The ordinary proof has passed multiple independent AI hostile audits.
-> Two independent solution-aware literature searches found no prior theorem
-> covering the full affine-dimension-two claim. Specialist human review is
-> still pending. No Lean verification or absolute historical-priority claim
-> is made.
+> The ordinary proof has passed multiple independent AI hostile audits,
+> including a final manuscript-level audit.  That audit identified two local
+> omitted edge cases, both repaired in the current paper.  Two independent
+> solution-aware literature searches found no prior theorem covering the full
+> affine-dimension-two claim. A fresh hostile audit of the repaired manuscript
+> is in progress; specialist human review is still pending.
+> Aristotle produced sorry-free POVM/PVM foundations but did not formalize the
+> main theorem or its corollaries. No full Lean verification or absolute
+> historical-priority claim is made.
 
-## Proposed theorem
+## Main theorem
 
 Let \(K\) be a compact convex set of affine dimension at most two, let \(E\)
 be a normalized positive-operator-valued measure on \(K\), let \(F\) be a
@@ -22,7 +26,7 @@ and strictly convex.  If
 \int_Kg\,dE=\int_Kg\,dF,
 \]
 
-then the proposed conclusion is
+then
 
 \[
 E=F.
@@ -61,10 +65,15 @@ PX=XP,\qquad PY=YP.
 - `paper/` contains the conventional research paper and a generated Markdown
   reading copy.
 - `formalization/` records Lean feasibility and any future development.
+- `formalization/aristotle_return_v1/` contains the exact returned Aristotle
+  feasibility project; its headline declarations remain `sorry`.
 - `scripts/verify.sh` checks hashes, paper hygiene, and formalization status.
 
 ## Verification boundary
 
-The current repository does not yet contain a Lean proof.  A successful
-repository verification run establishes source integrity and document
-hygiene only.
+The current repository does not contain a Lean proof of the main theorem.
+The Aristotle return contains sorry-free foundational results and exact-scope
+statements with three remaining `sorry` declarations.  A successful
+repository verification run establishes source integrity, document hygiene,
+and the absence of any hidden full-formalization claim; it does not
+kernel-check the manuscript theorem.

@@ -14,6 +14,21 @@ operator system \(A(K)\) is hyperrigid in \(C(\operatorname{ex}K)\). This is
 the exact external input used in the paper after identifying
 \(Z=\operatorname{ex}K\).
 
+## Closely related 2026 result
+
+Marcel Scherer, *The Hyperrigidity Conjecture for Spectrahedra*,
+arXiv:2601.16075:
+
+<https://arxiv.org/abs/2601.16075>
+
+The abstract states that \(A(L)\) is hyperrigid in
+\(C(\operatorname{ex}L)\) when \(L\) is a compact spectrahedron with closed
+extreme boundary.  This covers graph hulls satisfying those additional
+hypotheses, but an arbitrary graph hull of a continuous strictly convex
+function is not known to be a spectrahedron.  The result is therefore
+closely related and must be discussed, but it does not subsume the paper's
+arbitrary planar theorem.
+
 ## Contextual references
 
 - Lawrence G. Brown, *Convergence of functions of self-adjoint operators and
