@@ -7,6 +7,7 @@ cd "$repo_root"
 shasum -a 256 -c SOURCE_MANIFEST.sha256
 shasum -a 256 -c CHECKSUMS.sha256
 python3 scripts/tex_sanity.py
+python3 scripts/verify_formalization_scope.py
 
 aristotle_root="formalization/aristotle_return_v1/RequestProject"
 if [[ -d "$aristotle_root" ]]; then
@@ -18,7 +19,7 @@ if [[ -d "$aristotle_root" ]]; then
 
   if grep -nE '(^|[^[:alnum:]_])(admit|unsafe)([^[:alnum:]_]|$)|^[[:space:]]*(axiom|constant)([[:space:]]|$)' \
       "$aristotle_root/Statements.lean"; then
-    echo "Unexpected non-sorry Lean escape in the exact-scope statements." >&2
+    echo "Unexpected non-sorry Lean escape in the headline declarations." >&2
     exit 1
   fi
 
