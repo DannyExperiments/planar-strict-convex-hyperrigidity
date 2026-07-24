@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Verify frozen sources and paper hygiene
-        run: ./scripts/verify.sh
+        run: bash ./scripts/verify.sh
       - name: Remove any pre-existing PDF
         run: rm -f paper/planar_strict_convex_hyperrigidity.pdf
       - name: Compile the current TeX source
