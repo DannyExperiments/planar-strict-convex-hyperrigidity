@@ -58,11 +58,13 @@ SHA-256:
 1887d86be11c597cfcbc604346b3efb55260cb3bbecbf69720443c5210b6bc1f  formalization/6f13344c-d5b5-4805-ab3d-e779ff868afb-aristotle.tar.gz
 ```
 
-The return is an exact-scope feasibility result, not a formal proof of the
-manuscript. `RequestProject/POVM.lean` contains sorry-free foundational
-POVM/PVM results. The exact main theorem and operator corollaries are stated
-in `RequestProject/Statements.lean`, but `thm_main`, `cor_tuple`, and
-`cor_square` each remain proved only by `sorry`.
+The submitted request asked for exact scope, but the return did not achieve
+that scope for both operator corollaries. `RequestProject/POVM.lean` contains
+sorry-free foundational POVM/PVM results, and `thm_main` matches the
+manuscript theorem. `cor_tuple` and `cor_square` instead place the compressed
+tuple and a unital calculus on the full ambient Hilbert space, so they are
+stronger ambient-space surrogates rather than the manuscript's `ran P` corollaries.
+`thm_main`, `cor_tuple`, and `cor_square` each remain proved only by `sorry`.
 
 The returned project is pinned to Lean and mathlib `v4.28.0`, rather than the
 requested `v4.30.0`. Aristotle reported a successful build under that pinned
