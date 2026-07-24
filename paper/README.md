@@ -33,7 +33,8 @@ The build script removes any prior PDF before compilation. It accepts
 installed. The GitHub Actions workflow performs a fresh build and uploads
 the resulting PDF as an artifact.
 
-The manuscript identifies DannyExperiments as the conventional author and
-human curator, and explicitly credits GPT-5.6 Pro and Codex for their stated
+As in the A211420 paper, the title page omits an author line.  The manuscript's
+verification-and-provenance section identifies DannyExperiments as the human
+curator and publisher and credits GPT-5.6 Pro and Codex for their stated
 roles. Keep the paper, `AI_DISCLOSURE.md`, and `PROVENANCE.md` synchronized if
 that metadata changes.

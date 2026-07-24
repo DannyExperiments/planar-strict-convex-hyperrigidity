@@ -1,8 +1,9 @@
 # Planar Strictly Convex Hyperrigidity
 
-> **Status: proposed proof; AI-audited; specialist human review pending.**
+> **Status: proof; AI-audited; specialist human review pending.**
 >
-> - **Audit:** the exact paper and frozen evidence packet received `OVERALL PASS`.
+> - **Audit:** the frozen proof and evidence packet received `OVERALL PASS`;
+>   the mathematical text is unchanged since signoff.
 > - **Prior art:** two literature searches found no prior theorem with the full
 >   two-dimensional scope; absolute historical priority is not claimed.
 > - **Formalization:** this is not a full Lean verification. The Aristotle return

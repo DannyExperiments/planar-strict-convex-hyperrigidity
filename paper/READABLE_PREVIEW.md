@@ -2,7 +2,7 @@
 
 > Readable preview generated from the canonical TeX source.
 > It is for reading only; the `.tex` file remains the publication source.
-> Source SHA-256: `1902dc564a0a2fc09cd6a04fa6d56943deae15453b79d9841a3998b462426014`
+> Source SHA-256: `cfc0afa438544d100adaae7a69f8d3b0add028e17b36a7824dd3d182d616f315`
 
 ## Abstract
 
@@ -788,6 +788,11 @@ acting Hilbert space; see
 □
 
 ## Verification and provenance status
+
+The ordinary proof was generated with OpenAI GPT-5.6 Pro.  OpenAI Codex
+supported manuscript preparation, audit coordination, provenance tooling,
+and release infrastructure.  DannyExperiments initiated, curated, validated,
+and published the project.
 
 The ordinary proof underlying this manuscript was frozen before review and
 subjected to multiple separately run AI-assisted hostile audits.  An initial

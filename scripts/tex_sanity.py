@@ -25,8 +25,8 @@ if r"\documentclass[11pt,a4paper]{amsart}" not in text:
     fail("the paper is not using the required amsart/a4paper class")
 if r"\usepackage[margin=1in]{geometry}" not in text:
     fail("the paper is not using one-inch margins")
-if not re.search(r"\\author\s*\{[^}]+\}", text):
-    fail("author metadata is missing")
+if re.search(r"\\author\s*\{[^}]+\}", text):
+    fail("the title page must omit the author line; attribution belongs in provenance")
 if not re.search(r"\\date\s*\{[^}]+\}", text):
     fail("date metadata is missing")
 

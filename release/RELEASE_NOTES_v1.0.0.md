@@ -1,6 +1,6 @@
-# Release notes — v1.0.0 proposed proof
+# Release notes — v1.0.0 proof
 
-This release presents an ordinary proposed proof of planar strictly convex
+This release presents an ordinary proof of planar strictly convex
 hyperrigidity for compact convex sets of affine dimension at most two.
 
 ## Signed-off artifacts
