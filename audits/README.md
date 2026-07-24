@@ -1,6 +1,6 @@
 # Audit record
 
-The files in this directory are immutable complete audit returns.
+The completed-report files in this directory are immutable audit returns.
 
 - `Artifact_A_hostile_audit_1.md` and
   `Artifact_A_hostile_audit_2.md` independently audit the corrected square,
@@ -28,3 +28,8 @@ reports were deliberately withheld to reduce anchoring.
 
 The two assembled-manuscript reports are preserved separately because the
 second report does not replace or rewrite the first report's findings.
+
+`FINAL_RELEASE_AUDIT_PACKET.md` is the frozen evidence companion for the
+current TeX, and `FINAL_RELEASE_AUDIT_PROMPT.txt` is the copy-paste prompt for
+the final independent release audit. They are audit inputs, not prior referee
+conclusions.

@@ -23,6 +23,16 @@ attachments.  They must not be edited.
 
 All six reports are AI-generated audits, not human referee reports.
 
+## Final release audit inputs
+
+| Input | Role | SHA-256 |
+|---|---|---|
+| `audits/FINAL_RELEASE_AUDIT_PACKET.md` | Frozen evidence companion for the final fresh audit | `ffb4b46f26e2a147455eac7ea16b550ba356899979887e6b30d4d723aa0ca4d6` |
+| `audits/FINAL_RELEASE_AUDIT_PROMPT.txt` | Copy-paste final hostile-referee prompt | `65dc7a96806974a1cdcd2805044d8f16cb9de753018b126ab4b25a0e133f6419` |
+
+The final referee should receive the current TeX and the evidence packet.
+Earlier audit reports should not be attached, to reduce anchoring.
+
 ## Aristotle record
 
 | Artifact | Role | SHA-256 |
@@ -32,6 +42,25 @@ All six reports are AI-generated audits, not human referee reports.
 The Aristotle return contains sorry-free POVM/PVM foundations but leaves
 `thm_main`, `cor_tuple`, and `cor_square` as explicit `sorry` declarations.
 It is not a formal verification of the manuscript theorem.
+
+## Current post-audit release-candidate build
+
+The current TeX revision was compiled by GitHub Actions workflow run
+`30062596744` from private remote commit
+`4b2822bc33cfdea9a7408174d0be0e1b0c101d2e`.
+
+| Build artifact | Identifier or SHA-256 |
+|---|---|
+| Current TeX SHA-256 | `e5a8c072a8fc48b4c1df36e078e3395547677910442b42a48bfdb433e95123e9` |
+| GitHub Actions artifact ID | `8585105883` |
+| Artifact ZIP SHA-256 | `058b91a5123366630a5442c4fd653ef796f31bae4f388808fdfd15c6072b8c88` |
+| Compiled PDF SHA-256 | `465709ab87602367fde8bc95c2a829d8d7d19f110a14ffffa0240f17749ec54f` |
+
+The PDF has eight A4 pages. All eight pages were rendered and visually
+inspected on 2026-07-24. No clipping, overlap, broken-glyph, unresolved-
+reference, or bibliography-layout defect was observed. The inspected local
+copy is `output/pdf/planar_strict_convex_hyperrigidity.pdf`; generated
+outputs remain untracked.
 
 ## Superseded pre-audit-repair paper build record
 
@@ -49,12 +78,8 @@ This build predates the final disclosure, citation, and release-wording
 repairs requested by `repaired_manuscript_hostile_audit.md`; it is retained
 only as provenance and is not the current release candidate.
 
-The PDF has eight A4 pages. All eight rendered pages were byte-identical to
-the visually inspected run `30060525854`, for which no clipping, overlap,
-broken-glyph, or reference-layout defect was observed on 2026-07-24. The
-local working copy is
-`output/pdf/planar_strict_convex_hyperrigidity.pdf`; generated outputs remain
-untracked.
+That superseded PDF also has eight A4 pages. It is not the local release
+candidate and is retained only through the hashes above.
 
 ## Final literature record
 
