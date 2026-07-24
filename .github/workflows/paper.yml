@@ -1,0 +1,42 @@
+name: Fresh paper build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "paper/**"
+      - "scripts/**"
+      - ".github/workflows/paper.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "paper/**"
+      - "scripts/**"
+      - ".github/workflows/paper.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify frozen sources and paper hygiene
+        run: ./scripts/verify.sh
+      - name: Remove any pre-existing PDF
+        run: rm -f paper/planar_strict_convex_hyperrigidity.pdf
+      - name: Compile the current TeX source
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: paper/planar_strict_convex_hyperrigidity.tex
+          work_in_root_file_dir: true
+          texlive_version: 2026
+          os: debian
+      - name: Upload the freshly compiled PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: planar-strict-convex-hyperrigidity-paper
+          path: paper/planar_strict_convex_hyperrigidity.pdf
+          if-no-files-found: error
