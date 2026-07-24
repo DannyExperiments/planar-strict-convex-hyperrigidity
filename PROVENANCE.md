@@ -1,5 +1,12 @@
 # Provenance
 
+## Path convention
+
+Unless a path is explicitly labeled bundle-local, every path in this file is
+relative to the repository root. The corrective evidence bundle mirrors these
+repository paths from its own top-level directory. The enclosing repository
+path `release/` is not recursively embedded inside the ZIP.
+
 ## Canonical proof artifacts
 
 | Artifact | Role | SHA-256 |
@@ -22,8 +29,9 @@ attachments.  They must not be edited.
 | `audits/repaired_manuscript_hostile_audit.md` | Repaired-manuscript hostile audit; all fourteen numbered theorem, lemma, and corollary statements passed | `52cbcb253c3b33089f2c8285c95f29c3545749d8ce094f9522669728b8b15822` |
 | `audits/final_release_hostile_referee_report.md` | Final release audit; mathematics and literature passed, overall documentary verdict repairable | `bafaac66653c744d0224abbec71fd0f40880f016951b9e465e622fb2a85ad5f4` |
 | `audits/final_documentary_reaudit_report.md` | Self-contained-bundle re-audit; Items 1 and 3--6 passed, Item 2 failed on two stale disclosure phrases | `275f3b8a01a16ca3981aee678c7b9277f18a94eb4eb7cced63c2541deb5fd4d5` |
+| `audits/definitive_release_signoff_report.md` | Definitive release-signoff audit; mathematics, literature, and public scope passed; bundle paths and Lean corollary scope failed | `f24aa51b47eb757eadb7b9d76c2a54e6e9f236d5b0569415e7d884722521a4a9` |
 
-All eight reports are AI-generated audits, not human referee reports.
+All nine reports are AI-generated audits, not human referee reports.
 
 ## First final release audit inputs
 
@@ -32,11 +40,14 @@ All eight reports are AI-generated audits, not human referee reports.
 | `audits/FINAL_RELEASE_AUDIT_PACKET.md` | Frozen evidence companion for the final fresh audit | `ffb4b46f26e2a147455eac7ea16b550ba356899979887e6b30d4d723aa0ca4d6` |
 | `audits/FINAL_RELEASE_AUDIT_PROMPT.txt` | Copy-paste final hostile-referee prompt | `65dc7a96806974a1cdcd2805044d8f16cb9de753018b126ab4b25a0e133f6419` |
 
-These inputs produced the final release report above. The TeX has since
-received only the three documentary wording repairs specified in that report.
-The evidence packet was insufficiently self-contained because it supplied
-hashes without every referenced byte sequence. A complete bundle is preserved
-under `release/`.
+These inputs produced the first final release report above. The TeX then
+received only its requested documentary wording repairs. Earlier evidence
+packets were insufficiently self-contained because they supplied hashes
+without every referenced byte sequence or relocated repository paths. The
+corrective bundle under repository path `release/` mirrors
+repository-relative paths, includes every file in
+`SOURCE_MANIFEST.sha256`, and verifies from its own extracted top-level
+directory.
 
 ## Aristotle record
 
@@ -46,7 +57,11 @@ under `release/`.
 
 The Aristotle return contains sorry-free POVM/PVM foundations but leaves
 `thm_main`, `cor_tuple`, and `cor_square` as explicit `sorry` declarations.
-It is not a formal verification of the manuscript theorem.
+`thm_main` matches the manuscript theorem. `cor_tuple` and `cor_square` are
+stronger ambient-space surrogates, not exact formulations of the manuscript
+corollaries on `ran P`; see
+`formalization/ARISTOTLE_SCOPE_CORRECTION.md`. The return is not a formal
+verification of the manuscript theorem or either operator corollary.
 
 ## Superseded final-audit input build
 
