@@ -68,20 +68,20 @@ reference, or bibliography-layout defect was observed. The inspected local
 copy has now been superseded by the post-audit wording revision; generated
 outputs remain untracked.
 
-## Current post-final-audit documentary-repair build
+## Current definitive pre-signoff build
 
-The current TeX was compiled by GitHub Actions workflow run `30065631243`
+The current TeX was compiled by GitHub Actions workflow run `30068419467`
 from private remote commit
-`2e212e1c98dbf90abad7583d81c2eebb0b1f2f55`.
+`9e5140cfa1c227fff5075dc326c65a895b4e748c`.
 
 | Build artifact | Identifier or SHA-256 |
 |---|---|
-| Corrected TeX SHA-256 | `aab42ddd199eb8553bd74217c343eb54d4e88a669dae2e41964e80373269aba4` |
-| GitHub Actions job ID | `89395902734` |
-| GitHub Actions artifact ID | `8586166421` |
-| Artifact ZIP SHA-256 | `b824c6054d8cdc68216982ca84168b5556d957f3f13e2d772442974ccc4235fd` |
-| Compiled PDF SHA-256 | `8370971e72692ae4f61342df1a6198e294eaeb5c641ea3be96f226c8ab3ece87` |
-| Exact CI job-log SHA-256 | `94ed1de7742f4d0c4e375d669b1a7efab44622368b69d2f7998bddf2c9f06553` |
+| Final pre-signoff TeX SHA-256 | `42095124abea7dde36357f829cca671a1a548ce5c550ecefe68374852117e0d2` |
+| GitHub Actions job ID | `89403869296` |
+| GitHub Actions artifact ID | `8587089094` |
+| Artifact ZIP SHA-256 | `ddbe1103e800cd84ad78a7fcb39a31b1003afb7449f171c66313bf4f5ed4f22b` |
+| Compiled PDF SHA-256 | `92cd4a3483defa6ad0c89076d4c90c3aa50dc7cc91574715fa414588223ce84a` |
+| Exact CI job-log SHA-256 | `d8a48cb20b6384a923a83e9ee54567594be3c7d8dffab1bb6d48affcd3496630` |
 
 That PDF has eight A4 pages and was produced by pdfTeX 1.40.29. All eight
 pages were rendered and visually inspected on 2026-07-24; no clipping,
@@ -137,10 +137,11 @@ planar compact convex \(K\) with diffuse representations.
 8. Aristotle returned a compiling feasibility project with a sorry-free
    foundational layer and three unproved headline declarations.
 9. A fresh hostile audit of the repaired manuscript passed all fourteen
-   numbered mathematical results and requested only documentary, citation,
-   and private-release wording repairs.
+   numbered theorem, lemma, and corollary statements and requested only
+   documentary, citation, and private-release wording repairs.
 10. The fresh report was preserved verbatim and its valid release repairs
-    were incorporated without altering a numbered mathematical result.
+    were incorporated without altering a theorem, lemma, corollary, or
+    numbered remark.
 11. A final release audit passed all numbered theorem, lemma, and corollary
     statements and the literature/scope language, but returned
     `OVERALL REPAIRABLE` because the two-file submission was not a

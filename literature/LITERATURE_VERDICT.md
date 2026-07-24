@@ -4,7 +4,7 @@ Date assessed: 2026-07-24.
 
 ## Exact conclusion
 
-Two independent solution-aware searches located no prior theorem proving all
+Two separately run solution-aware searches located no prior theorem proving all
 of the following simultaneously:
 
 1. \(K\) is an arbitrary compact convex set of affine dimension two;
@@ -17,8 +17,8 @@ The accurate status is therefore:
 - **Mathematical proof status:** the frozen ordinary proof passed two audits
   at each of its A and B stages. The first assembled manuscript also passed
   a hostile audit subject to two local repairs, both incorporated. A fresh
-  audit of the repaired manuscript passed all fourteen numbered mathematical
-  results and the stated literature-scope comparisons.
+  audit of the repaired manuscript passed all fourteen numbered theorem,
+  lemma, and corollary statements and the stated literature-scope comparisons.
 - **Affine dimension zero or one:** previously known, principally from
   Brown's one-variable strict-convexity theorem.
 - **Affine dimension two, special \(g\):** previously known in subclasses,
@@ -63,7 +63,7 @@ with closed extreme boundary.  It does not cover an arbitrary graph hull
 \(L_g\), because no spectrahedral representation is available for a general
 continuous strictly convex \(g\).
 
-## Independently checked primary-source points
+## Primary-source points checked separately
 
 - Scherer's Theorem 3.8 proves \(A(L)\) hyperrigid in
   \(C(\operatorname{ex}L)\) for planar compact convex \(L\).

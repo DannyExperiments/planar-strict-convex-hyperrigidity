@@ -14,13 +14,13 @@ Then paste the complete contents of:
 Corrected TeX SHA-256:
 
 ```text
-aab42ddd199eb8553bd74217c343eb54d4e88a669dae2e41964e80373269aba4
+42095124abea7dde36357f829cca671a1a548ce5c550ecefe68374852117e0d2
 ```
 
 Self-contained evidence ZIP SHA-256:
 
 ```text
-1d7b0886f81e1ac4e5fec374b57300cf3a2982892b770d906dc91f8b02649b34
+02e04371149660db9a627eafb100ce9c09d703242f7a6d0d901ea32a1b37b141
 ```
 
 The ZIP contains 55 payload files plus `ROOT_SHA256SUMS`; all 55 checksum
