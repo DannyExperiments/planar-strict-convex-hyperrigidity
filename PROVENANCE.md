@@ -19,7 +19,7 @@ attachments.  They must not be edited.
 | `audits/Artifact_B_hostile_audit_1.md` | Planar extension and dependency audit | `a75868954291282452030735d7c30fd687a45b22b95df8bd8375833b294e39c6` |
 | `audits/Artifact_B_hostile_audit_2.md` | Fresh planar extension audit | `67f5c4b32a27c4030ccb3f325cf67bc64e52ca8942fdbcef7da565dfb4e1c24c` |
 | `audits/final_hostile_referee_report.md` | Final manuscript-level hostile audit; attachment wrapper preserved verbatim | `c4c9dd5befe18e0be89eda8e8a389986d07a49e3ee910554e0577bdadd48ff07` |
-| `audits/repaired_manuscript_hostile_audit.md` | Repaired-manuscript hostile audit; all fourteen numbered mathematical results passed | `52cbcb253c3b33089f2c8285c95f29c3545749d8ce094f9522669728b8b15822` |
+| `audits/repaired_manuscript_hostile_audit.md` | Repaired-manuscript hostile audit; all fourteen numbered theorem, lemma, and corollary statements passed | `52cbcb253c3b33089f2c8285c95f29c3545749d8ce094f9522669728b8b15822` |
 | `audits/final_release_hostile_referee_report.md` | Final release audit; mathematics and literature passed, overall documentary verdict repairable | `bafaac66653c744d0224abbec71fd0f40880f016951b9e465e622fb2a85ad5f4` |
 
 All seven reports are AI-generated audits, not human referee reports.
@@ -34,8 +34,8 @@ All seven reports are AI-generated audits, not human referee reports.
 These inputs produced the final release report above. The TeX has since
 received only the three documentary wording repairs specified in that report.
 The evidence packet was insufficiently self-contained because it supplied
-hashes without every referenced byte sequence. A complete bundle is prepared
-separately under `release/`.
+hashes without every referenced byte sequence. A complete bundle is preserved
+under `release/`.
 
 ## Aristotle record
 
@@ -66,6 +66,27 @@ inspected on 2026-07-24. No clipping, overlap, broken-glyph, unresolved-
 reference, or bibliography-layout defect was observed. The inspected local
 copy has now been superseded by the post-audit wording revision; generated
 outputs remain untracked.
+
+## Current post-final-audit documentary-repair build
+
+The current TeX was compiled by GitHub Actions workflow run `30065631243`
+from private remote commit
+`2e212e1c98dbf90abad7583d81c2eebb0b1f2f55`.
+
+| Build artifact | Identifier or SHA-256 |
+|---|---|
+| Corrected TeX SHA-256 | `aab42ddd199eb8553bd74217c343eb54d4e88a669dae2e41964e80373269aba4` |
+| GitHub Actions job ID | `89395902734` |
+| GitHub Actions artifact ID | `8586166421` |
+| Artifact ZIP SHA-256 | `b824c6054d8cdc68216982ca84168b5556d957f3f13e2d772442974ccc4235fd` |
+| Compiled PDF SHA-256 | `8370971e72692ae4f61342df1a6198e294eaeb5c641ea3be96f226c8ab3ece87` |
+| Exact CI job-log SHA-256 | `94ed1de7742f4d0c4e375d669b1a7efab44622368b69d2f7998bddf2c9f06553` |
+
+That PDF has eight A4 pages and was produced by pdfTeX 1.40.29. All eight
+pages were rendered and visually inspected on 2026-07-24; no clipping,
+overlap, broken glyph, unresolved-reference, or bibliography-layout defect
+was observed. The exact log, artifact ZIP, extracted PDF, workflow, scripts,
+and build record are included in the self-contained release bundle.
 
 ## Superseded pre-audit-repair paper build record
 
@@ -102,10 +123,10 @@ planar compact convex \(K\) with diffuse representations.
 
 1. Artifact A repaired the exact two-variable square proof and established
    the polytope extension in affine dimension at most two.
-2. Independent hostile audits passed the frozen Artifact A.
+2. Separately run hostile audits passed the frozen Artifact A.
 3. Artifact B added the measurable extreme-boundary replacement needed for
    arbitrary planar compact convex sets.
-4. Two independent hostile audits passed Artifact B.
+4. Two separately run hostile audits passed Artifact B.
 5. A separate affine-dimension-three branch was developed and remains in a
    different repository.
 6. Two final solution-aware literature searches found no prior full planar
@@ -123,9 +144,12 @@ planar compact convex \(K\) with diffuse representations.
     literature/scope language, but returned `OVERALL REPAIRABLE` because the
     two-file submission was not a self-contained evidence bundle and because
     three documentary phrases required tightening.
-12. The final release report was preserved verbatim, and its three wording
-    repairs were applied without changing mathematics.
-13. Specialist human review and absolute historical-priority review remain
+12. The final release report was preserved verbatim, and its documentary
+    wording repairs were applied without changing mathematics.
+13. A fresh CI build succeeded, all eight revised PDF pages passed visual
+    inspection, and a self-contained release-evidence bundle was sealed for
+    one narrow documentary re-audit.
+14. Specialist human review and absolute historical-priority review remain
     pending.
 
 ## Attribution boundary

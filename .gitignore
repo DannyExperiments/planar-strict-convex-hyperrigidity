@@ -3,6 +3,7 @@
 build/
 tmp/
 output/
+release/final_release_evidence_v1/
 *.aux
 *.bbl
 *.blg

@@ -4,8 +4,8 @@
 
 - [x] Canonical Artifact A frozen and hashed.
 - [x] Canonical Artifact B frozen and hashed.
-- [x] Two independent audits passed Artifact A.
-- [x] Two independent audits passed Artifact B.
+- [x] Two separately run audits passed Artifact A.
+- [x] Two separately run audits passed Artifact B.
 - [x] Paper theorem statements compared line by line with A and B.
 - [x] Final manuscript-level hostile audit completed.
 - [x] Final audit's \(d=0\) energy-lemma omission repaired.
@@ -15,10 +15,11 @@
       incorporated.
 - [x] Standard probability-kernel and POVM--UCP references added.
 - [x] Final release hostile audit preserved verbatim.
-- [x] Final release audit passed every numbered mathematical result.
+- [x] Final release audit passed every numbered theorem, lemma, and corollary
+      statement.
 - [x] Final release audit's three documentary wording repairs incorporated
       without changing mathematics.
-- [ ] Final release audit's self-contained evidence-bundle repair completed.
+- [x] Final release audit's self-contained evidence-bundle repair completed.
 - [ ] Narrow documentary re-audit returns `OVERALL PASS`.
 - [ ] Specialist human review obtained.
 
@@ -41,8 +42,8 @@
 ## Paper and repository
 
 - [x] TeX paper complete.
-- [ ] Fresh PDF compiled from the post-final-audit wording revision.
-- [ ] Every page of that revised PDF visually inspected.
+- [x] Fresh PDF compiled from the post-final-audit wording revision.
+- [x] Every page of that revised PDF visually inspected.
 - [x] Hash manifest regenerated after final audit repairs.
 - [x] Verification script passes after final audit repairs.
 - [x] Privacy and credential-pattern scan passes.
