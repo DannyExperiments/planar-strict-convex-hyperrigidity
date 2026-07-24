@@ -29,6 +29,12 @@ The completed-report files in this directory are immutable audit returns.
   `AI_DISCLOSURE.md` retained two stale phrases. Both exact phrases were
   corrected after preserving that report; no mathematical or TeX change was
   made.
+- `definitive_release_signoff_report.md` passed the mathematics,
+  literature, and public-claim scope. It failed the release packet because
+  four manifest paths were unresolved and because two Lean operator
+  declarations were inaccurately described as exact-scope. The report is
+  preserved verbatim; both failure classes are repaired in the corrective
+  evidence bundle.
 
 These are AI-generated reports.  They support internal mathematical
 confidence but are not human referee reports.
@@ -44,3 +50,6 @@ second report does not replace or rewrite the first report's findings.
 current TeX, and `FINAL_RELEASE_AUDIT_PROMPT.txt` is the copy-paste prompt for
 that separately run release audit. They are audit inputs, not prior referee
 conclusions.
+
+`CORRECTIVE_RELEASE_SIGNOFF_PROMPT.txt` is the final copy-paste prompt for the
+current TeX and evidence bundle v2.
