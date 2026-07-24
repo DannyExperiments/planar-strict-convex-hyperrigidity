@@ -19,11 +19,15 @@
       statement.
 - [x] Final release audit's three documentary wording repairs incorporated
       without changing mathematics.
-- [x] Final release audit's self-contained evidence-bundle repair completed.
+- [x] First evidence-bundle repair completed.
 - [x] Narrow documentary re-audit preserved; Items 1 and 3--6 passed.
 - [x] Its sole two stale phrases in `AI_DISCLOSURE.md` corrected and
       mechanically verified without another audit cycle.
-- [ ] Definitive full release-signoff audit returns `OVERALL PASS`.
+- [x] Definitive release-signoff mathematics, literature, and public-claim
+      categories passed.
+- [x] Its four bundle-path failures and two-corollary Lean-scope overstatement
+      were repaired and mechanically checked.
+- [ ] Corrective full release-signoff audit returns `OVERALL PASS`.
 - [ ] Specialist human review obtained.
 
 ## Literature
@@ -37,10 +41,13 @@
 
 ## Formalization
 
-- [x] Exact Lean scope selected.
-- [x] Aristotle return preserved with exact status and explicit proof gaps.
+- [x] Exact Lean target selected.
+- [x] Original Aristotle archive preserved with explicit proof gaps.
+- [x] `thm_main` identified as manuscript-scope; `cor_tuple` and `cor_square`
+      identified as stronger ambient-space surrogates.
 - [x] Full theorem explicitly marked unformalized.
-- [ ] Clean-checkout build and declaration audit pass.
+- [ ] Independent clean-checkout Lean build.
+- [x] Declaration scan passes with exactly three disclosed `sorry` proofs.
 
 ## Paper and repository
 
