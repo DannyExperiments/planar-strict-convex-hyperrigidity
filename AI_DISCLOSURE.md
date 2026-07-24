@@ -36,13 +36,18 @@ convex, diffuse-representation scope. Their negative-search conclusion is
 recorded as “apparently new,” not as proof of historical priority.
 
 An exact-scope formalization request was submitted to Aristotle by Harmonic
-as request `6f13344c-d5b5-4805-ab3d-e779ff868afb`.  The returned project
-reports a successful build and its foundational POVM/PVM files contain no
-`sorry`, `admit`, new mathematical axiom, or unsafe escape under the
-repository's declaration scan. The main theorem and two operator corollaries
-remain explicit `sorry` declarations. The returned archive is pinned to
-Lean/mathlib v4.28.0 rather than the requested v4.30.0, and independent replay
-is pending. No full Lean verification is claimed.
+as request `6f13344c-d5b5-4805-ab3d-e779ff868afb`.  The returned project's
+foundational POVM/PVM files contain no `sorry`, `admit`, new mathematical
+axiom, or unsafe escape under the repository's declaration scan. The
+declaration `thm_main` matches the manuscript theorem. The declarations
+`cor_tuple` and `cor_square` instead use a unital joint functional calculus
+for the compressed tuple on the full ambient Hilbert space; they are stronger
+ambient-space surrogates and are not exact formulations of the manuscript
+corollaries on `ran P`. All three declarations remain explicit `sorry`
+declarations. The
+returned archive is pinned to Lean/mathlib v4.28.0 rather than the requested
+v4.30.0, and independent replay remains pending. No headline theorem or
+corollary is claimed as Lean-verified.
 
 No human specialist review has yet been obtained.  Historical priority is
 not claimed beyond the preserved negative literature searches.
