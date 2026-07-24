@@ -35,18 +35,19 @@ It is not a formal verification of the manuscript theorem.
 ## Current paper build record
 
 The repaired TeX was compiled by GitHub Actions workflow run
-`30060525854` from remote commit
-`1f56b210d7ebf28f57373f0d48702ec9acad1d69`.
+`30060796309` from remote commit
+`88d5d25650b658fa592d44bcd354cdaf32940964`.
 
 | Build artifact | Identifier or SHA-256 |
 |---|---|
-| GitHub Actions artifact ID | `8584383427` |
-| Artifact ZIP SHA-256 | `8c253cec6bacfcc2171a35c6a48af430022683ed128c9717b9f066154a4da49c` |
-| Compiled PDF SHA-256 | `a67eed93996c723eb645560549fc844686cf5f0582f00aa668009d008c56960e` |
+| GitHub Actions artifact ID | `8584479061` |
+| Artifact ZIP SHA-256 | `71ce3879474bb737ea93b98d33e6e4bda01224533879b5caf2659cfa733b761f` |
+| Compiled PDF SHA-256 | `300f4189f08c36e9eaebeb6c74e6dcab513f6fff1b79861fbeeb45ecc8658e02` |
 
-The PDF has eight A4 pages. All eight rendered pages were visually inspected
-on 2026-07-24 with no clipping, overlap, broken-glyph, or reference-layout
-defect observed. The local working copy is
+The PDF has eight A4 pages. All eight rendered pages were byte-identical to
+the visually inspected run `30060525854`, for which no clipping, overlap,
+broken-glyph, or reference-layout defect was observed on 2026-07-24. The
+local working copy is
 `output/pdf/planar_strict_convex_hyperrigidity.pdf`; generated outputs remain
 untracked.
 
