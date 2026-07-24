@@ -49,6 +49,9 @@ The return provides a sorry-free POVM/PVM foundational layer, including
 diagonal scalar measures and a polarization bridge.  It does not prove the
 manuscript theorem: `thm_main`, `cor_tuple`, and `cor_square` remain explicit
 `sorry` declarations, and the hyperrigidity corollary is not formalized.
+`thm_main` matches the manuscript theorem. `cor_tuple` and `cor_square` are
+stronger ambient-space surrogates rather than exact formulations of the
+operator corollaries on `ran P`.
 The archive is pinned to Lean/mathlib v4.28.0 rather than the requested
 v4.30.0.  Aristotle reported a successful build of that project; an
 independent local replay remains pending.
