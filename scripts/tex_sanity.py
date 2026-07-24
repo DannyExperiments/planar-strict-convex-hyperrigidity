@@ -13,7 +13,11 @@ def fail(message: str) -> None:
     raise SystemExit(1)
 
 
-root = Path(__file__).resolve().parents[1]
+root = (
+    Path(sys.argv[1]).resolve()
+    if len(sys.argv) == 2
+    else Path(__file__).resolve().parents[1]
+)
 tex_path = root / "paper" / "planar_strict_convex_hyperrigidity.tex"
 text = tex_path.read_text(encoding="utf-8")
 
