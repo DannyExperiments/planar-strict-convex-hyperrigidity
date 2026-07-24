@@ -1,0 +1,62 @@
+Act as a hostile mathematical referee. The attached TeX manuscript is the
+entire submission. Treat it as fresh: do not assume any earlier proof
+artifact, audit, literature report, conversation, or claimed verdict is
+correct. Do not repair gaps silently.
+
+Audit the exact theorem stated in the manuscript under exactly its stated
+hypotheses. Separate mathematical correctness from novelty, exposition, and
+publication readiness.
+
+Check every load-bearing component, including:
+
+1. definitions and equivalence of the POVM/PVM, compression, and
+   hyperrigidity formulations;
+2. measurable subgradient selection and uniform Bregman separation on a
+   common compact convex domain;
+3. the orientation of Douglas factorization, the bounded-truncation argument
+   for reciprocal spectral integrals, joint measurability, and every use of
+   Tonelli or monotone convergence;
+4. Minty parametrization, the covering-number estimate, and divergence of
+   the critical inverse-square energy in affine dimensions one and two;
+5. interval reconstruction, endpoint treatment, affine exposure, and all
+   positivity arguments used to eliminate cross terms;
+6. boundaryization for arbitrary compact convex planar sets, including the
+   existence and measurability of representing kernels, exact applicability
+   of Scherer's planar extreme-boundary result, diffuse spectral measures,
+   strict Jensen equality, and overlaps between boundary pieces;
+7. recovery of the full POVM, passage from compact to Borel sets, and the
+   operator compression corollary;
+8. the claimed equivalence with hyperrigidity and whether any hidden
+   separability, finite-rank, atomicity, differentiability, or
+   finite-dimensional-Hilbert-space assumption has entered;
+9. each cited external theorem at the exact strength used. Identify any
+   citation that does not support its load-bearing invocation.
+
+For every numbered theorem, lemma, proposition, and corollary, return one of:
+
+PASS — the statement and proof are correct as written;
+REPAIRABLE — a specific local defect exists and you provide a complete
+correction without changing the theorem;
+FAIL — the stated result is unsupported or false;
+DEPENDENT — validity rests on an external theorem whose exact hypotheses you
+could not verify.
+
+For every non-PASS verdict, quote the relevant label or opening words,
+identify the precise failing inference, and give either an explicit
+counterexample or a complete corrected lemma. Do not infer correctness from
+plausibility, style, prior AI confidence, or the absence of an obvious
+counterexample.
+
+End with:
+
+A. an overall verdict for the main POVM/PVM theorem;
+B. a separate verdict for the square compressed-functional-calculus
+   corollary;
+C. a separate verdict for the hyperrigidity corollary;
+D. the exact strongest theorem actually established;
+E. a list of all remaining unverified external dependencies;
+F. a statement of whether the manuscript can responsibly be released as a
+   proof, requires repairs, or should be withdrawn.
+
+Return a complete standalone referee report suitable for preservation
+verbatim in a public repository.
