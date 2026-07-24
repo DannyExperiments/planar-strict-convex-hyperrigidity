@@ -16,10 +16,13 @@
 > `OVERALL REPAIRABLE` because its two-file submission did not include the
 > bytes behind every referenced hash and because three documentary phrases
 > required tightening. The wording repairs are incorporated in the current
-> TeX, and a self-contained evidence bundle has been prepared. A narrow
-> documentary re-audit passed five of six categories and identified two stale
-> phrases in `AI_DISCLOSURE.md`; both are corrected in the current bundle. One
-> definitive full release-signoff audit is pending. Specialist human
+> TeX. A narrow documentary re-audit passed five of six categories and
+> identified two stale phrases in `AI_DISCLOSURE.md`; both were corrected. A
+> subsequent definitive release-signoff audit passed the mathematics,
+> literature, and public-claim scope, but found four unresolved bundle paths
+> and inaccurate exact-scope wording for two Lean corollary surrogates. Both
+> defects are repaired in the current repository and mechanically checked.
+> One corrective release signoff is pending. Specialist human
 > review is still pending.
 > The returned Aristotle project reports a successful Lean/mathlib v4.28.0
 > build and contains a foundational layer without disclosed proof escapes, but
@@ -76,21 +79,26 @@ PX=XP,\qquad PY=YP.
 
 - `source/` contains immutable canonical ordinary-proof artifacts.
 - `audits/` contains complete hostile-audit returns.
-- `release/` contains the self-contained evidence package prepared in response
-  to the final release audit.
+- `release/` contains the generated self-contained evidence package prepared
+  for corrective release signoff.
 - `literature/` contains preliminary and final prior-art searches.
 - `paper/` contains the conventional research paper and a generated Markdown
   reading copy.
 - `formalization/` records Lean feasibility and any future development.
-- `formalization/aristotle_return_v1/` contains the exact returned Aristotle
-  feasibility project; its headline declarations remain `sorry`.
+- `formalization/6f13344c-d5b5-4805-ab3d-e779ff868afb-aristotle.tar.gz`
+  is the exact returned Aristotle archive.
+- `formalization/aristotle_return_v1/` is the extracted project with
+  documentary scope corrections only; its three headline declarations remain
+  `sorry`.
 - `scripts/verify.sh` checks hashes, paper hygiene, and formalization status.
 
 ## Verification boundary
 
 The current repository does not contain a Lean proof of the main theorem.
-The Aristotle return contains sorry-free foundational results and exact-scope
-statements with three remaining `sorry` declarations.  A successful
-repository verification run establishes source integrity, document hygiene,
-and the absence of any hidden full-formalization claim; it does not
-kernel-check the manuscript theorem.
+The Aristotle return contains sorry-free foundational results and three
+remaining `sorry` declarations.  `thm_main` matches the manuscript theorem;
+`cor_tuple` and `cor_square` act on the full ambient Hilbert space and are
+stronger ambient-space surrogates, not exact formulations of the manuscript
+corollaries on `ran P`.  A successful repository verification run establishes
+source integrity, document hygiene, and the absence of any hidden
+full-formalization claim; it does not prove any headline declaration.
