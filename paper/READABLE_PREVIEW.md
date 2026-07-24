@@ -2,7 +2,7 @@
 
 > Readable preview generated from the canonical TeX source.
 > It is for reading only; the `.tex` file remains the publication source.
-> Source SHA-256: `aab42ddd199eb8553bd74217c343eb54d4e88a669dae2e41964e80373269aba4`
+> Source SHA-256: `42095124abea7dde36357f829cca671a1a548ce5c550ecefe68374852117e0d2`
 
 ## Abstract
 
@@ -127,8 +127,8 @@ If \(g\) is nonaffine, then
 the graph lift when \(\dim\operatorname{aff} K=1\), whereas an original planar \(K\)
 produces a three-dimensional graph hull.  The scope not covered by those
 results is precisely arbitrary continuous strictly convex \(g\) on such
-two-dimensional \(K\), including diffuse representations.  Two independent
-solution-aware literature searches completed on July 24, 2026 located no
+two-dimensional \(K\), including diffuse representations.  Two separately
+run solution-aware literature searches completed on July 24, 2026 located no
 prior theorem with that full scope; this negative search is not a claim of
 historical priority.
 
@@ -810,7 +810,7 @@ is formally verified.  The source artifacts, audit reports, literature
 reports, Aristotle return, checksums, and build workflows are preserved in a
 research repository at
 \url{https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity}.
-Two independent solution-aware literature searches found the
+Two separately run solution-aware literature searches found the
 dimension-one case in prior work and located no prior theorem with the full
 scope of Theorem `thm:main`; this remains evidence from a negative
 search, not a claim of historical priority.

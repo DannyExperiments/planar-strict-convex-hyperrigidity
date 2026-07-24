@@ -4,9 +4,8 @@
 >
 > The ordinary proof has passed multiple separately run AI hostile audits,
 > including a final manuscript-level audit.  That audit identified two local
-> omitted edge cases, both repaired in the current paper.  Two independent
-> separately run solution-aware literature searches found no prior theorem
-> covering the full
+> omitted edge cases, both repaired in the current paper. Two separately run
+> solution-aware literature searches found no prior theorem covering the full
 > affine-dimension-two claim. A fresh hostile audit of the repaired manuscript
 > passed all fourteen numbered theorem, lemma, and corollary statements and
 > requested only
@@ -17,8 +16,10 @@
 > `OVERALL REPAIRABLE` because its two-file submission did not include the
 > bytes behind every referenced hash and because three documentary phrases
 > required tightening. The wording repairs are incorporated in the current
-> TeX, and a self-contained evidence bundle has been prepared. One final
-> documentary-only re-audit is pending. Specialist human
+> TeX, and a self-contained evidence bundle has been prepared. A narrow
+> documentary re-audit passed five of six categories and identified two stale
+> phrases in `AI_DISCLOSURE.md`; both are corrected in the current bundle. One
+> definitive full release-signoff audit is pending. Specialist human
 > review is still pending.
 > The returned Aristotle project reports a successful Lean/mathlib v4.28.0
 > build and contains a foundational layer without disclosed proof escapes, but

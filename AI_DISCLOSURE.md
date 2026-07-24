@@ -1,8 +1,8 @@
 # AI disclosure
 
 The ordinary proof artifacts in this repository were generated and repaired
-with OpenAI GPT-5.6 Pro under human direction.  Multiple independent
-GPT-5.6 Pro sessions performed hostile mathematical audits.  Exact platform
+with OpenAI GPT-5.6 Pro under human direction. Multiple separately run
+GPT-5.6 Pro sessions performed hostile mathematical audits. Exact platform
 run identifiers for those Pro conversations were not available in the
 exported artifacts.  OpenAI Codex preserved artifacts, verified hashes,
 organized provenance, implemented audited manuscript repairs, and prepared
@@ -12,9 +12,9 @@ DannyExperiments is the human curator and conventional manuscript author.
 The paper credits GPT-5.6 Pro for generation of the ordinary proof and Codex
 for manuscript preparation, audit coordination, and provenance tooling.
 The repaired-manuscript audit dated 2026-07-24 passed all fourteen numbered
-mathematical results and classified the submission overall as repairable
-because of documentary and release-wording defects. Those defects were
-repaired after preserving the report verbatim.
+theorem, lemma, and corollary statements and classified the submission
+overall as repairable because of documentary and release-wording defects.
+Those defects were repaired after preserving the report verbatim.
 
 A later final release audit separately rechecked the current TeX and
 passed all fourteen numbered theorem, lemma, and corollary statements, the
@@ -28,7 +28,7 @@ No AI audit is represented as human peer review.  No theorem is represented
 as Lean-verified until the exact formal statement is kernel-checked without
 `sorry`, `admit`, new mathematical axioms, or unsafe escapes.
 
-Two independent AI-assisted solution-aware literature searches were
+Two separately run AI-assisted solution-aware literature searches were
 completed on 2026-07-24. They located prior coverage of the
 affine-dimension-at-most-one case and special planar nonlinear functions,
 but no theorem with the full arbitrary two-dimensional, arbitrary strictly

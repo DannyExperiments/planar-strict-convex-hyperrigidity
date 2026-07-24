@@ -10,7 +10,7 @@
 | Main planar theorem | Arbitrary compact convex \(K\), affine dimension at most two | Artifacts A and B; Scherer's planar extreme-boundary theorem | **PASS in final release hostile audit; human specialist review pending** |
 | Operator compression corollary | Commuting self-adjoint tuple with joint spectrum in such \(K\) | Main planar theorem and leakage identity | **PASS in final release hostile audit** |
 | One-dimensional prior art | \(\dim\operatorname{aff}K\leq1\), arbitrary continuous strictly convex \(g\), diffuse spectra allowed | Brown 2016; also Scherer after graph lift | **Previously known** |
-| Two-dimensional prior-art search | \(\dim\operatorname{aff}K=2\), arbitrary continuous strictly convex \(g\), arbitrary/diffuse representations | Two independent solution-aware searches through 2026-07-24 | **No prior theorem located; apparently new** |
+| Two-dimensional prior-art search | \(\dim\operatorname{aff}K=2\), arbitrary continuous strictly convex \(g\), arbitrary/diffuse representations | Two separately run solution-aware searches through 2026-07-24 | **No prior theorem located; apparently new** |
 | Historical priority | Absolute claim that no earlier equivalent exists | Specialist review and broader citation verification | **Pending; no “first” claim** |
 | Human peer review | Specialist review of exact paper | External reviewer | **Pending** |
 | Lean foundations | Arbitrary-Hilbert-space POVM/PVM scalarization and polarization layer | Aristotle return on Lean/mathlib v4.28.0 | **Aristotle-reported compiling and sorry-free; independent replay pending** |

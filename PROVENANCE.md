@@ -21,8 +21,9 @@ attachments.  They must not be edited.
 | `audits/final_hostile_referee_report.md` | Final manuscript-level hostile audit; attachment wrapper preserved verbatim | `c4c9dd5befe18e0be89eda8e8a389986d07a49e3ee910554e0577bdadd48ff07` |
 | `audits/repaired_manuscript_hostile_audit.md` | Repaired-manuscript hostile audit; all fourteen numbered theorem, lemma, and corollary statements passed | `52cbcb253c3b33089f2c8285c95f29c3545749d8ce094f9522669728b8b15822` |
 | `audits/final_release_hostile_referee_report.md` | Final release audit; mathematics and literature passed, overall documentary verdict repairable | `bafaac66653c744d0224abbec71fd0f40880f016951b9e465e622fb2a85ad5f4` |
+| `audits/final_documentary_reaudit_report.md` | Self-contained-bundle re-audit; Items 1 and 3--6 passed, Item 2 failed on two stale disclosure phrases | `275f3b8a01a16ca3981aee678c7b9277f18a94eb4eb7cced63c2541deb5fd4d5` |
 
-All seven reports are AI-generated audits, not human referee reports.
+All eight reports are AI-generated audits, not human referee reports.
 
 ## First final release audit inputs
 
@@ -112,7 +113,7 @@ candidate and is retained only through the hashes above.
 | Report | Role | SHA-256 |
 |---|---|---|
 | `literature/final_deep_research_report.md` | Solution-aware prior-art search | `16d085483ded93534c4598ba3b81336433b808c1a8ccbc3e29655a9c183a094e` |
-| `literature/final_pro_literature_report.md` | Independent Pro prior-art search | `362aceeae65269e0423ae136a1dbc0b0929a1e7432434c18d7f56c8747e86025` |
+| `literature/final_pro_literature_report.md` | Separately run Pro prior-art search | `362aceeae65269e0423ae136a1dbc0b0929a1e7432434c18d7f56c8747e86025` |
 
 Both reports distinguish the previously known affine-dimension-at-most-one
 case from the full affine-dimension-two theorem. Neither located a prior
@@ -140,16 +141,24 @@ planar compact convex \(K\) with diffuse representations.
    and private-release wording repairs.
 10. The fresh report was preserved verbatim and its valid release repairs
     were incorporated without altering a numbered mathematical result.
-11. A final release audit passed all numbered mathematical results and the
-    literature/scope language, but returned `OVERALL REPAIRABLE` because the
-    two-file submission was not a self-contained evidence bundle and because
-    three documentary phrases required tightening.
+11. A final release audit passed all numbered theorem, lemma, and corollary
+    statements and the literature/scope language, but returned
+    `OVERALL REPAIRABLE` because the two-file submission was not a
+    self-contained evidence bundle and because three documentary phrases
+    required tightening.
 12. The final release report was preserved verbatim, and its documentary
     wording repairs were applied without changing mathematics.
 13. A fresh CI build succeeded, all eight revised PDF pages passed visual
     inspection, and a self-contained release-evidence bundle was sealed for
     one narrow documentary re-audit.
-14. Specialist human review and absolute historical-priority review remain
+14. That re-audit passed bundle integrity, the documentary-only TeX diff, the
+    build chain, the Aristotle boundary, and public-claim scope. It failed
+    only because `AI_DISCLOSURE.md` retained “independent” and “numbered
+    mathematical results”; both phrases were corrected exactly and verified
+    mechanically without changing the TeX or mathematics.
+15. The corrected bundle was frozen for one definitive full release-signoff
+    audit. This is the final planned AI audit cycle.
+16. Specialist human review and absolute historical-priority review remain
     pending.
 
 ## Attribution boundary

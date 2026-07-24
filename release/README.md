@@ -7,16 +7,16 @@ The attachment for the final narrow documentary re-audit is:
 SHA-256:
 
 ```text
-d8b4c623cd19225d5418441c3da474fbec6d1040753b80bae7c0f6f1ebe98f29
+1d7b0886f81e1ac4e5fec374b57300cf3a2982892b770d906dc91f8b02649b34
 ```
 
-Size: 1,136,226 bytes.
+Size: 1,138,830 bytes.
 
 The archive contains the exact corrected TeX, all frozen source artifacts,
 all seven prior audit returns, both final literature reports, the Aristotle
 archive and extracted project, a declaration scan, the fresh GitHub Actions
 log and artifact, the extracted eight-page PDF, build scripts and workflow,
-the documentary-only TeX diff, and a root checksum manifest covering all 54
+the documentary-only TeX diff, and a root checksum manifest covering all 55
 included files.
 
 Archive integrity was tested with `unzip -t`. From the extracted

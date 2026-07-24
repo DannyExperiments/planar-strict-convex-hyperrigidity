@@ -20,14 +20,17 @@
 - [x] Final release audit's three documentary wording repairs incorporated
       without changing mathematics.
 - [x] Final release audit's self-contained evidence-bundle repair completed.
-- [ ] Narrow documentary re-audit returns `OVERALL PASS`.
+- [x] Narrow documentary re-audit preserved; Items 1 and 3--6 passed.
+- [x] Its sole two stale phrases in `AI_DISCLOSURE.md` corrected and
+      mechanically verified without another audit cycle.
+- [ ] Definitive full release-signoff audit returns `OVERALL PASS`.
 - [ ] Specialist human review obtained.
 
 ## Literature
 
 - [x] Preliminary searches preserved.
 - [x] Final solution-aware deep-research report preserved.
-- [x] Final independent Pro literature report preserved.
+- [x] Final separately run Pro literature report preserved.
 - [x] Load-bearing Scherer theorem checked in its primary source.
 - [x] Scherer's 2026 spectrahedra result discussed and distinguished.
 - [x] No unsupported priority or “first proof” language.
