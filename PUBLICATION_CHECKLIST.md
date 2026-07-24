@@ -32,8 +32,8 @@
 ## Paper and repository
 
 - [x] TeX paper complete.
-- [ ] Fresh PDF compiled from the current TeX.
-- [ ] Every PDF page visually inspected.
+- [x] Fresh PDF compiled from the current TeX.
+- [x] Every PDF page visually inspected.
 - [x] Hash manifest regenerated after final audit repairs.
 - [x] Verification script passes after final audit repairs.
 - [x] Privacy and credential-pattern scan passes.

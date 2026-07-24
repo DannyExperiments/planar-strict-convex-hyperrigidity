@@ -32,6 +32,24 @@ The Aristotle return contains sorry-free POVM/PVM foundations but leaves
 `thm_main`, `cor_tuple`, and `cor_square` as explicit `sorry` declarations.
 It is not a formal verification of the manuscript theorem.
 
+## Current paper build record
+
+The repaired TeX was compiled by GitHub Actions workflow run
+`30060525854` from remote commit
+`1f56b210d7ebf28f57373f0d48702ec9acad1d69`.
+
+| Build artifact | Identifier or SHA-256 |
+|---|---|
+| GitHub Actions artifact ID | `8584383427` |
+| Artifact ZIP SHA-256 | `8c253cec6bacfcc2171a35c6a48af430022683ed128c9717b9f066154a4da49c` |
+| Compiled PDF SHA-256 | `a67eed93996c723eb645560549fc844686cf5f0582f00aa668009d008c56960e` |
+
+The PDF has eight A4 pages. All eight rendered pages were visually inspected
+on 2026-07-24 with no clipping, overlap, broken-glyph, or reference-layout
+defect observed. The local working copy is
+`output/pdf/planar_strict_convex_hyperrigidity.pdf`; generated outputs remain
+untracked.
+
 ## Final literature record
 
 | Report | Role | SHA-256 |
