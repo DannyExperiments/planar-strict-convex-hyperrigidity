@@ -1,29 +1,16 @@
 # Planar Strictly Convex Hyperrigidity
 
-> **Status: private research preparation.**
+> **Status: signed-off public release candidate.**
 >
-> The ordinary proof has passed multiple separately run AI hostile audits,
-> including a final manuscript-level audit.  That audit identified two local
-> omitted edge cases, both repaired in the current paper. Two separately run
-> solution-aware literature searches found no prior theorem covering the full
-> affine-dimension-two claim. A fresh hostile audit of the repaired manuscript
-> passed all fourteen numbered theorem, lemma, and corollary statements and
-> requested only
-> disclosure, provenance, citation, and release-wording repairs, now
-> incorporated. A subsequent final release audit again passed every numbered
-> theorem, lemma, and corollary statement and the literature/scope language,
-> but returned
-> `OVERALL REPAIRABLE` because its two-file submission did not include the
-> bytes behind every referenced hash and because three documentary phrases
-> required tightening. The wording repairs are incorporated in the current
-> TeX. A narrow documentary re-audit passed five of six categories and
-> identified two stale phrases in `AI_DISCLOSURE.md`; both were corrected. A
-> subsequent definitive release-signoff audit passed the mathematics,
-> literature, and public-claim scope, but found four unresolved bundle paths
-> and inaccurate exact-scope wording for two Lean corollary surrogates. Both
-> defects are repaired in the current repository and mechanically checked.
-> One corrective release signoff is pending. Specialist human
-> review is still pending.
+> A fresh six-category AI audit of the exact current TeX and frozen
+> v4 evidence archive returned `OVERALL PASS` on mathematics,
+> literature/scope, provenance/authorship/disclosure, reproducibility,
+> formalization boundaries, and public-claim scope. The signed-off archive is
+> immutable; the full-pass report is preserved separately as the post-signoff
+> record. Two solution-aware literature searches found no prior theorem
+> covering the full affine-dimension-two claim, so the paper describes the
+> result as apparently new and does not claim absolute historical priority.
+> Specialist human review is still pending.
 > The returned Aristotle project reports a successful Lean/mathlib v4.28.0
 > build and contains a foundational layer without disclosed proof escapes, but
 > it did not formalize the main theorem or its corollaries; independent replay
@@ -79,11 +66,11 @@ PX=XP,\qquad PY=YP.
 
 - `source/` contains immutable canonical ordinary-proof artifacts.
 - `audits/` contains complete hostile-audit returns.
-- `release/` contains the generated self-contained evidence package prepared
-  for corrective release signoff.
+- `release/` contains the signed-off self-contained evidence package and the
+  public release notes.
 - `literature/` contains preliminary and final prior-art searches.
-- `paper/` contains the conventional research paper and a generated Markdown
-  reading copy.
+- `paper/` contains the conventional research paper as TeX, the exact
+  signed-off PDF, and a generated Markdown reading copy.
 - `formalization/` records Lean feasibility and any future development.
 - `formalization/6f13344c-d5b5-4805-ab3d-e779ff868afb-aristotle.tar.gz`
   is the exact returned Aristotle archive.

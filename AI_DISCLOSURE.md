@@ -24,6 +24,22 @@ bytes behind every provenance hash and because three documentary phrases
 required tightening. That report is preserved verbatim. Its wording repairs
 are incorporated without changing any mathematical statement or proof.
 
+The v3 final-corrective audit again passed the mathematics, provenance,
+reproducibility, formalization-boundary, and public-claim categories. It
+returned `OVERALL FAIL` only because three current files in the
+documentary-corrected Aristotle tree retained four unqualified descriptions
+of Scherer's theorem as “unpublished.” That report is preserved verbatim.
+The current files now distinguish the cited 2024 arXiv version from the work's
+JFA publication record, DOI 10.1016/j.jfa.2026.111602. No mathematical or
+comment-stripped Lean code was changed.
+
+A fresh six-category audit then checked the exact current TeX and frozen v4
+evidence archive. It returned `OVERALL PASS` for mathematics,
+literature/scope, provenance/authorship/disclosure, reproducibility and bundle
+self-containment, the formalization boundary, and release/public-claim scope.
+The v4 archive was not rebuilt after that audit. The report is preserved as
+`audits/final_corrective_release_signoff_v4_pass.md`.
+
 No AI audit is represented as human peer review.  No theorem is represented
 as Lean-verified until the exact formal statement is kernel-checked without
 `sorry`, `admit`, new mathematical axioms, or unsafe escapes.

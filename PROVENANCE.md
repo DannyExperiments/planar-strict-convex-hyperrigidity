@@ -30,8 +30,19 @@ attachments.  They must not be edited.
 | `audits/final_release_hostile_referee_report.md` | Final release audit; mathematics and literature passed, overall documentary verdict repairable | `bafaac66653c744d0224abbec71fd0f40880f016951b9e465e622fb2a85ad5f4` |
 | `audits/final_documentary_reaudit_report.md` | Self-contained-bundle re-audit; Items 1 and 3--6 passed, Item 2 failed on two stale disclosure phrases | `275f3b8a01a16ca3981aee678c7b9277f18a94eb4eb7cced63c2541deb5fd4d5` |
 | `audits/definitive_release_signoff_report.md` | Definitive release-signoff audit; mathematics, literature, and public scope passed; bundle paths and Lean corollary scope failed | `f24aa51b47eb757eadb7b9d76c2a54e6e9f236d5b0569415e7d884722521a4a9` |
+| `audits/corrective_release_signoff_audit_8.md` | v2 corrective signoff; substantive categories passed; root verifier and Lean scan coordinates failed | `95f45780f5bcfd34103385f306495f73117fb2b5b2e7767221ec494bec484dc2` |
+| `audits/corrective_release_signoff_audit_9.md` | Separately run v2 corrective signoff; substantive categories passed; root verifier and one provenance path failed | `9ed0b6916a771a575d873ddb8b02ca7639318e2c580ff320b15c0788a67f2f01` |
+| `audits/final_corrective_release_signoff_audit_10.md` | v3 final corrective signoff; five categories passed; literature consistency failed on four stale Scherer publication-status descriptions | `ce83a7a4e96384d760a33cab97cf7f142fd7f1f9c161e855c84cb6145fe39f4d` |
+| `audits/final_corrective_release_signoff_v4_pass.md` | Fresh audit of the exact current TeX and immutable v4 archive; all six categories passed; final verdict `OVERALL PASS` | `6493294455f3a7b2aba169475e85e6d9114f1ec84bfad74c1d5a166c1761f522` |
 
-All nine reports are AI-generated audits, not human referee reports.
+All thirteen reports are AI-generated audits, not human referee reports.
+
+## Current v4 signoff input and result
+
+| Input | Role | SHA-256 |
+|---|---|---|
+| `audits/FINAL_CORRECTIVE_SIGNOFF_V4_PROMPT.txt` | Exact prompt for a fresh six-category audit of the unchanged TeX and v4 evidence packet | `c8ac9db2483e5f088a8f2913486b884d417e91f1b15e525343b543233d973c61` |
+| `audits/final_corrective_release_signoff_v4_pass.md` | Verbatim result of that audit; six category passes and `OVERALL PASS` | `6493294455f3a7b2aba169475e85e6d9114f1ec84bfad74c1d5a166c1761f522` |
 
 ## First final release audit inputs
 
@@ -83,26 +94,28 @@ reference, or bibliography-layout defect was observed. The inspected local
 copy has now been superseded by the post-audit wording revision; generated
 outputs remain untracked.
 
-## Current definitive pre-signoff build
+## Current corrective release build
 
-The current TeX was compiled by GitHub Actions workflow run `30068419467`
+The current TeX was compiled by GitHub Actions workflow run `30073118197`
 from private remote commit
-`9e5140cfa1c227fff5075dc326c65a895b4e748c`.
+`7586a3b28e7b4ebaeca2d1b26c2a63b956fd4a5b`.
 
 | Build artifact | Identifier or SHA-256 |
 |---|---|
-| Final pre-signoff TeX SHA-256 | `42095124abea7dde36357f829cca671a1a548ce5c550ecefe68374852117e0d2` |
-| GitHub Actions job ID | `89403869296` |
-| GitHub Actions artifact ID | `8587089094` |
-| Artifact ZIP SHA-256 | `ddbe1103e800cd84ad78a7fcb39a31b1003afb7449f171c66313bf4f5ed4f22b` |
-| Compiled PDF SHA-256 | `92cd4a3483defa6ad0c89076d4c90c3aa50dc7cc91574715fa414588223ce84a` |
-| Exact CI job-log SHA-256 | `d8a48cb20b6384a923a83e9ee54567594be3c7d8dffab1bb6d48affcd3496630` |
+| Current TeX SHA-256 | `1902dc564a0a2fc09cd6a04fa6d56943deae15453b79d9841a3998b462426014` |
+| GitHub Actions job ID | `89417964849` |
+| GitHub Actions artifact ID | `8588800742` |
+| Artifact ZIP SHA-256 | `28c695943def70a219cb01c323025136e0a9ed9ac50366c93e198056e2a5dc12` |
+| Compiled PDF SHA-256 | `27ffab5e1a5d3ab99f2bbe4f5b44d6c62b4d7d79aa8860627e1a73f5e2edadb1` |
+| Exact CI job-log SHA-256 | `a9c800882b45b66e3d384136718162024896dbf8d786b5bf275ef63ba460a238` |
 
 That PDF has eight A4 pages and was produced by pdfTeX 1.40.29. All eight
 pages were rendered and visually inspected on 2026-07-24; no clipping,
 overlap, broken glyph, unresolved-reference, or bibliography-layout defect
-was observed. The exact log, artifact ZIP, extracted PDF, workflow, scripts,
-and build record are included in the self-contained release bundle.
+was observed. The exact log, artifact ZIP, extracted PDF, workflow, current
+release-verification scripts, and build record are included in the
+self-contained release bundle. The root-verifier and metadata-regression
+repairs postdate that CI run; the paper TeX and compiled PDF did not change.
 
 ## Superseded pre-audit-repair paper build record
 
@@ -117,8 +130,8 @@ The preceding TeX revision was compiled by GitHub Actions workflow run
 | Compiled PDF SHA-256 | `300f4189f08c36e9eaebeb6c74e6dcab513f6fff1b79861fbeeb45ecc8658e02` |
 
 This build predates the final disclosure, citation, and release-wording
-repairs requested by `repaired_manuscript_hostile_audit.md`; it is retained
-only as provenance and is not the current release candidate.
+repairs requested by `audits/repaired_manuscript_hostile_audit.md`; it is
+retained only as provenance and is not the current release candidate.
 
 That superseded PDF also has eight A4 pages. It is not the local release
 candidate and is retained only through the hashes above.
@@ -129,6 +142,7 @@ candidate and is retained only through the hashes above.
 |---|---|---|
 | `literature/final_deep_research_report.md` | Solution-aware prior-art search | `16d085483ded93534c4598ba3b81336433b808c1a8ccbc3e29655a9c183a094e` |
 | `literature/final_pro_literature_report.md` | Separately run Pro prior-art search | `362aceeae65269e0423ae136a1dbc0b0929a1e7432434c18d7f56c8747e86025` |
+| `literature/SCHERER_PUBLICATION_STATUS.md` | Current publisher-record check for the load-bearing Scherer theorem | `0a734a14d0f0eb8f5c244af9f304159167a9e33282881fc59e17259f3c4ac085` |
 
 Both reports distinguish the previously known affine-dimension-at-most-one
 case from the full affine-dimension-two theorem. Neither located a prior
@@ -172,9 +186,40 @@ planar compact convex \(K\) with diffuse representations.
     only because `AI_DISCLOSURE.md` retained “independent” and “numbered
     mathematical results”; both phrases were corrected exactly and verified
     mechanically without changing the TeX or mathematics.
-15. The corrected bundle was frozen for one definitive full release-signoff
-    audit. This is the final planned AI audit cycle.
-16. Specialist human review and absolute historical-priority review remain
+15. The corrected bundle was frozen for a definitive full release-signoff
+    audit. That audit independently passed the mathematics, literature, and
+    public-claim categories, but found that the ZIP had relocated paths and
+    omitted both preliminary searches, and that two Aristotle declarations
+    had been described too broadly.
+16. The report was preserved verbatim. The v2 bundle now mirrors repository
+    paths, contains all manifest-listed evidence, and verifies itself from its
+    extracted root. Formalization metadata now states that `thm_main` matches
+    the manuscript while `cor_tuple` and `cor_square` are stronger
+    ambient-space surrogates; all three still contain `sorry`.
+17. GitHub Actions workflow run `30073118197` passed on the corrective
+    revision, and all eight pages of its exact artifact PDF passed visual
+    inspection.
+18. Two separately run audits of v2 again passed mathematics,
+    literature/scope, the formalization boundary, and public-claim scope.
+    They found a broken no-argument root verifier, six stale Lean line
+    coordinates, and one unresolved provenance path. All three defects were
+    repaired in v3 and protected by regression checks.
+19. The v3 final-corrective audit passed mathematics, provenance,
+    reproducibility, formalization boundaries, and public-claim scope. It
+    failed literature consistency only because four current extracted-tree
+    descriptions still called Scherer's theorem “unpublished.”
+20. The audit was preserved verbatim. Elsevier's article API confirmed the
+    JFA publication record, and the four descriptions were corrected without
+    changing mathematics or comment-stripped Lean code. A regression check
+    now rejects recurrence.
+21. The v4 packet was frozen as the sole current signoff candidate.
+22. A fresh audit independently reran its exact verifier, compared the
+    attached and bundled TeX byte-for-byte, checked the CI artifact and
+    bundled PDF byte-for-byte, and passed all six release categories. Its
+    final verdict was `OVERALL PASS`.
+23. The report was preserved outside the immutable v4 archive. The current
+    public paper PDF is the exact artifact audited in that archive.
+24. Specialist human review and absolute historical-priority review remain
     pending.
 
 ## Attribution boundary

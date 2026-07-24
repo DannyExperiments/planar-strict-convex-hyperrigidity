@@ -4,6 +4,14 @@ Source:
 
 `planar_strict_convex_hyperrigidity.tex`
 
+Signed-off PDF:
+
+`planar_strict_convex_hyperrigidity.pdf`
+
+The PDF is the exact eight-page A4 artifact checked in the v4 release-signoff
+audit. Its SHA-256 is
+`27ffab5e1a5d3ab99f2bbe4f5b44d6c62b4d7d79aa8860627e1a73f5e2edadb1`.
+
 Readable in-app copy:
 
 `READABLE_PREVIEW.md`

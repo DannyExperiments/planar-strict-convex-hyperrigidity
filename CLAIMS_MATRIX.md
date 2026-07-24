@@ -7,8 +7,8 @@
 | Square theorem | \(K=[0,1]^2\), arbitrary continuous strictly convex \(g\) | Artifact A | Passed two audits |
 | Polytope theorem | Compact convex polytope of affine dimension at most two | Artifact A | Passed two audits |
 | Extreme-boundary reconstruction | Arbitrary planar compact convex \(K\) | Scherer's planar boundary theorem and strict Jensen equality | Passed two audits |
-| Main planar theorem | Arbitrary compact convex \(K\), affine dimension at most two | Artifacts A and B; Scherer's planar extreme-boundary theorem | **PASS in final release hostile audit; human specialist review pending** |
-| Operator compression corollary | Commuting self-adjoint tuple with joint spectrum in such \(K\) | Main planar theorem and leakage identity | **PASS in final release hostile audit** |
+| Main planar theorem | Arbitrary compact convex \(K\), affine dimension at most two | Artifacts A and B; Scherer's planar extreme-boundary theorem | **PASS in the full v4 release-signoff audit; human specialist review pending** |
+| Operator compression corollary | Commuting self-adjoint tuple with joint spectrum in such \(K\) | Main planar theorem and leakage identity | **PASS in the full v4 release-signoff audit** |
 | One-dimensional prior art | \(\dim\operatorname{aff}K\leq1\), arbitrary continuous strictly convex \(g\), diffuse spectra allowed | Brown 2016; also Scherer after graph lift | **Previously known** |
 | Two-dimensional prior-art search | \(\dim\operatorname{aff}K=2\), arbitrary continuous strictly convex \(g\), arbitrary/diffuse representations | Two separately run solution-aware searches through 2026-07-24 | **No prior theorem located; apparently new** |
 | Historical priority | Absolute claim that no earlier equivalent exists | Specialist review and broader citation verification | **Pending; no “first” claim** |
@@ -16,6 +16,7 @@
 | Lean foundations | Arbitrary-Hilbert-space POVM/PVM scalarization and polarization layer | Aristotle return on Lean/mathlib v4.28.0 | **Aristotle-reported compiling and sorry-free; independent replay pending** |
 | Lean statement scope | `thm_main` matches the arbitrary-Hilbert-space manuscript theorem; `cor_tuple` and `cor_square` are stronger ambient-space surrogates, not the manuscript's `ran P` corollaries | Aristotle return plus scope comparison | **Disclosed exactly; all three declarations remain `sorry`** |
 | Lean verification | Manuscript theorem and operator corollaries | New formal infrastructure plus Scherer formalization and exact `ran P` operator declarations | **Unformalized; no headline Lean proof is claimed** |
+| Release signoff | Exact current TeX plus self-contained v4 evidence bundle | Six-category AI audit | **OVERALL PASS; signed-off archive frozen unchanged** |
 
 ## Forbidden inferences
 

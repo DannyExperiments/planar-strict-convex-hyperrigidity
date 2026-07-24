@@ -27,7 +27,18 @@
       categories passed.
 - [x] Its four bundle-path failures and two-corollary Lean-scope overstatement
       were repaired and mechanically checked.
-- [ ] Corrective full release-signoff audit returns `OVERALL PASS`.
+- [x] Two separately run v2 corrective signoffs preserved; both passed
+      mathematics, literature/scope, formalization, and public-claim scope.
+- [x] Their root-verifier, line-coordinate, and provenance-path failures
+      repaired with regression checks in v3.
+- [x] Final v3 corrective release-signoff audit preserved verbatim; five
+      categories passed and literature consistency failed only on four stale
+      Scherer publication-status descriptions.
+- [x] Those four descriptions corrected against live Elsevier metadata
+      without changing mathematics or comment-stripped Lean code.
+- [x] Regression check rejects recurrence of the four stale descriptions.
+- [x] Final v4 corrective release-signoff audit returned `OVERALL PASS`.
+- [x] Full-pass report preserved outside the immutable signed-off v4 archive.
 - [ ] Specialist human review obtained.
 
 ## Literature
@@ -36,6 +47,8 @@
 - [x] Final solution-aware deep-research report preserved.
 - [x] Final separately run Pro literature report preserved.
 - [x] Load-bearing Scherer theorem checked in its primary source.
+- [x] Scherer's JFA publication record and assigned cover date checked against
+      Elsevier's article API.
 - [x] Scherer's 2026 spectrahedra result discussed and distinguished.
 - [x] No unsupported priority or “first proof” language.
 
@@ -59,4 +72,7 @@
 - [x] Privacy and credential-pattern scan passes.
 - [x] AI disclosure updated with the available model, curator, audit, and
       Aristotle information.
-- [x] Repository remains private pending release approval.
+- [x] Exact signed-off PDF installed at
+      `paper/planar_strict_convex_hyperrigidity.pdf`.
+- [ ] Signed-off release commit pushed and tagged.
+- [ ] Repository made public.

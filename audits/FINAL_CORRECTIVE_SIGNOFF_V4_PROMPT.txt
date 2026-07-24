@@ -1,0 +1,163 @@
+Perform a fresh final corrective release-signoff audit of the two attached
+artifacts:
+
+1. `planar_strict_convex_hyperrigidity.tex`
+2. `planar-strict-convex-hyperrigidity-final-evidence-v4.zip`
+
+This is a release-signoff audit of the exact current theorem, proof, and
+evidence packet. It is not a request to strengthen the theorem, extend it to
+affine dimension three, complete the Lean formalization, establish absolute
+historical priority, or demand human peer review.
+
+The ZIP contains prior AI audit reports, including the v3 audit that returned
+OVERALL FAIL. Treat every prior report as immutable historical evidence only.
+Do not inherit any prior verdict. Reperform the checks below against the
+current TeX and extracted v4 tree.
+
+The v3 audit's sole failure was that three current files contained four
+unqualified descriptions of Marcel Scherer's planar theorem as “unpublished.”
+The current v4 candidate is intended to repair that documentary defect only.
+The mathematical TeX is expected to remain byte-for-byte unchanged at:
+
+`1902dc564a0a2fc09cd6a04fa6d56943deae15453b79d9841a3998b462426014`
+
+Publisher metadata to verify independently:
+
+- original preprint: arXiv:2411.11709, submitted in 2024;
+- Journal of Functional Analysis publication record;
+- volume 291, issue 10, article 111602;
+- DOI 10.1016/j.jfa.2026.111602;
+- assigned cover date 15 November 2026.
+
+The manuscript may cite the 2024 arXiv version. The defect to exclude is an
+unqualified current statement that the work or theorem is unpublished.
+
+Return PASS or FAIL for each of these six categories.
+
+1. MATHEMATICS
+
+Independently check every theorem, lemma, corollary, numbered remark, proof,
+hypothesis, endpoint case, measurable-selection step, operator inequality,
+external-theorem translation, and stated consequence in the TeX. Confirm that
+the exact scope is compact convex K of affine dimension at most two, a
+normalized POVM E, a PVM F, and a continuous strictly convex g, with agreement
+on affine functions and g implying E = F. Check the compression and
+hyperrigidity corollaries at their exact stated scope.
+
+2. LITERATURE AND SCOPE
+
+Independently check the descriptions and use of Brown, Scherer,
+Davidson--Kennedy, Kleski, Shankar, and Pietrzycki--Stochel. Check the
+distinction between the known affine-dimension-at-most-one case and the
+proposed genuinely planar theorem. Check the graph-hull dimension argument,
+the spectrahedra limitation, the qualified negative-search language, and the
+absence of an absolute “first proof” or priority claim.
+
+Specifically inspect these current files:
+
+- `formalization/aristotle_return_v1/RequestProject/Statements.lean`
+- `formalization/aristotle_return_v1/GAP_REPORT.md`
+- `formalization/aristotle_return_v1/ARISTOTLE_SUMMARY.md`
+- `formalization/ARISTOTLE_SCOPE_CORRECTION.md`
+- `literature/PRIMARY_SOURCE_CHECK.md`
+- `literature/SCHERER_PUBLICATION_STATUS.md`
+
+Confirm that the four stale “unpublished” descriptions are gone, that the
+replacement wording is supported by live publisher metadata, and that citing
+the original arXiv version is not misrepresented as the work's current
+publication status. Search all current non-historical documentary surfaces
+for semantically equivalent stale wording; do not fail preserved historical
+audits or the immutable Aristotle archive for accurately recording their
+earlier contents.
+
+3. PROVENANCE, AUTHORSHIP, AND DISCLOSURE
+
+Check consistency across the TeX, `AI_DISCLOSURE.md`, `PROVENANCE.md`,
+`CLAIMS_MATRIX.md`, and `PUBLICATION_CHECKLIST.md`. Paths in
+`PROVENANCE.md` are repository-relative unless explicitly labeled
+bundle-local, and every backticked current document path must resolve from the
+extracted root. Confirm that AI audits are not described as human review,
+DannyExperiments is identified as conventional manuscript author and curator,
+model contributions are disclosed, and the v3 failure plus v4 repair are
+recorded accurately.
+
+4. REPRODUCIBILITY AND BUNDLE SELF-CONTAINMENT
+
+From the extracted ZIP root, run exactly:
+
+`bash VERIFY_BUNDLE.sh`
+
+Record its exit status and final line. Independently verify:
+
+- outer ZIP integrity and one-top-level-directory structure;
+- no duplicate members, path traversal, absolute members, or symlink payloads;
+- exact `ROOT_SHA256SUMS` coverage and successful hash checking;
+- successful `SOURCE_MANIFEST.sha256` verification;
+- presence of both canonical source artifacts;
+- presence of every manifest-listed audit, including
+  `audits/final_corrective_release_signoff_audit_10.md`;
+- presence of both preliminary and both final literature reports;
+- presence of `literature/SCHERER_PUBLICATION_STATUS.md`;
+- presence of the immutable Aristotle archive and corrected extracted tree;
+- presence of the CI log, workflow, scripts, artifact ZIP, extracted PDF, and
+  complete documentary-only TeX patch;
+- byte identity of the CI-artifact PDF and bundled PDF;
+- byte identity of the attached TeX and bundled TeX;
+- absence of legacy relocated `sources/` and `audit_inputs/` directories.
+
+5. FORMALIZATION BOUNDARY
+
+Independently inspect the immutable Aristotle archive and current
+documentary-corrected extracted tree. Confirm that:
+
+- the foundational Lean files contain no disclosed proof escape;
+- `Statements.lean` contains exactly three standalone `sorry` proofs;
+- comment-stripped Lean code is unchanged from the immutable archive;
+- `thm_main` matches the manuscript theorem;
+- `cor_tuple` and `cor_square` are stronger ambient-space surrogates, not
+  exact formulations of the manuscript corollaries on `ran P`;
+- the declaration scan gives the actual current theorem and `sorry`
+  coordinates;
+- the Scherer publication-status repair is comment/documentation only; and
+- no headline theorem or operator corollary is represented as Lean-verified.
+
+6. RELEASE READINESS AND PUBLIC-CLAIM SCOPE
+
+Confirm that the packet presents an ordinary AI-generated and AI-audited
+proposed proof in affine dimension at most two. It must not claim:
+
+- an unrestricted affine-dimension-three result;
+- human peer review;
+- complete Lean verification;
+- absolute historical priority;
+- a certified “first proof.”
+
+The explicit absence of completed Lean proofs, human specialist review, or
+absolute-priority certification is a disclosed limitation, not by itself a
+release defect.
+
+OUTPUT REQUIREMENTS
+
+For each category, return:
+
+- PASS or FAIL;
+- confidence;
+- the evidence actually checked;
+- every defect, if any, with exact file path, line or section, quotation, and
+  explanation.
+
+Perform a complete semantic sweep before issuing the verdict. Do not stop
+after finding one defect and do not defer additional known defects to another
+round.
+
+Then return exactly one overall verdict:
+
+- `OVERALL PASS` if every category passes and the exact TeX and v4 evidence
+  packet are internally consistent and release-ready within their expressly
+  stated limitations; or
+- `OVERALL FAIL` if any current claim is mathematically false, unsupported,
+  internally inconsistent, misleading, or unreproducible.
+
+Do not fail for stylistic preferences or optional future improvements. Do not
+propose another audit cycle. If the verdict is OVERALL FAIL, enumerate every
+failure discovered in this audit in the same response.

@@ -1,0 +1,39 @@
+Perform one final, narrow documentary re-audit of the attached corrected TeX
+and self-contained evidence ZIP.
+
+Do not reopen or re-referee the mathematics unless the documentary repairs
+themselves introduced a new mathematical change. The preserved final release
+report in the ZIP already records PASS for every numbered theorem, lemma, and
+corollary statement and PASS for literature/scope. Your task is only to decide
+whether that report's remaining release defects are now cured.
+
+Verify independently:
+
+1. The ZIP is self-contained for every material hash/provenance assertion and
+   its ROOT_SHA256SUMS validates every included file.
+2. The wording now says "separately run" rather than claiming independent
+   audits, accurately describes the fourteen passed theorem/lemma/corollary
+   statements, and uses evergreen manuscript/repository language.
+3. The AUDITED_TO_REVISED_TEX.patch and the two TeX files show that the
+   post-audit changes are documentary only and introduce no mathematical
+   change.
+4. The fresh-build record, exact CI log, CI artifact ZIP, extracted PDF, source
+   commit, workflow, scripts, and hashes are mutually consistent.
+5. The Aristotle/Lean boundary is explicit: the foundational files have no
+   disclosed proof escapes, while thm_main, cor_tuple, and cor_square remain
+   sorry and the headline theorem is not claimed Lean-verified.
+6. The public claims remain limited to an ordinary proposed proof in affine
+   dimension at most two, AI-audited rather than human-peer-reviewed, with no
+   absolute historical-priority claim and no unrestricted dimension-three
+   claim.
+
+Return PASS or FAIL for each numbered item, then exactly one overall verdict:
+
+- OVERALL PASS — documentary defects cured and release packet internally
+  reproducible; or
+- OVERALL FAIL — identify a specific remaining documentary or build defect.
+
+Do not return REPAIRABLE for stylistic preferences. Do not suggest broader
+theorems, new exposition, another audit cycle, Lean formalization, or human
+peer review as a condition of this documentary verdict. Those are separate
+future work.

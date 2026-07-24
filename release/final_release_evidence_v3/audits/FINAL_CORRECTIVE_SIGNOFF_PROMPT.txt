@@ -1,0 +1,62 @@
+Perform the final corrective release-signoff audit of the attached current
+TeX and evidence ZIP v3. Treat every earlier audit report inside the ZIP as
+historical evidence only, not as a substitute for your own checks.
+
+Return PASS or FAIL for each category:
+
+1. Mathematics: independently check every theorem, lemma, corollary, numbered
+   remark, proof, hypothesis, endpoint case, measurability step,
+   operator-theoretic step, and stated consequence in the TeX.
+
+2. Literature and scope: check the cited-result descriptions, the distinction
+   between known affine dimension at most one and the proposed planar theorem,
+   the qualified negative-search language, and the absence of absolute
+   historical-priority wording.
+
+3. Provenance, authorship, and disclosure: check consistency across the TeX
+   and current metadata. Paths in PROVENANCE.md are repository-relative unless
+   explicitly labeled bundle-local; every backticked document path must
+   resolve from the extracted root. The ZIP mirrors those paths and
+   intentionally does not recursively contain its enclosing repository
+   release/ directory.
+
+4. Reproducibility and bundle self-containment: from the extracted ZIP root,
+   run exactly `bash VERIFY_BUNDLE.sh` with no additional argument and record
+   its exit status and final line. Independently confirm ZIP integrity; exact
+   ROOT_SHA256SUMS payload coverage; successful SOURCE_MANIFEST.sha256
+   verification; presence of both source artifacts, all manifest-listed
+   audits, both preliminary searches, both final literature reports, the CI
+   log, workflow, scripts, artifact ZIP, extracted PDF, and documentary-only
+   TeX patch; and identity of the artifact PDF and bundled PDF. Confirm that
+   no legacy relocated `sources/` or `audit_inputs/` directory is present.
+
+5. Formalization boundary: independently inspect the immutable Aristotle
+   archive and documentary-corrected extracted tree. Confirm that:
+   (a) the foundational Lean files contain no disclosed proof escape;
+   (b) Statements.lean contains exactly three standalone `sorry` proofs;
+   (c) comment-stripped Lean code is unchanged from the original archive;
+   (d) `thm_main` matches the manuscript theorem;
+   (e) `cor_tuple` and `cor_square` are accurately described as stronger
+   ambient-space surrogates, not exact formulations of the manuscript
+   corollaries on `ran P`;
+   (f) the declaration scan reports the actual current theorem and `sorry`
+   line coordinates; and
+   (g) no headline Lean verification is claimed.
+
+6. Release readiness and public-claim scope: confirm that this is presented as
+   an ordinary proposed proof in affine dimension at most two, with no
+   unrestricted dimension-three result, human-peer-review claim, full Lean
+   verification claim, or absolute historical-priority claim.
+
+Then return exactly one overall verdict:
+
+- OVERALL PASS — every category passes and the current TeX and evidence ZIP
+  v3 are internally consistent and release-ready within their expressly
+  stated limitations; or
+- OVERALL FAIL — identify every specific false, unsupported, inconsistent, or
+  unreproducible current claim and quote its exact file and location.
+
+Do not fail or withhold OVERALL PASS for stylistic preferences, desired future
+exposition, absence of a completed Lean formalization, absence of human peer
+review, or the disclosed limits of negative literature searches. Those are
+explicit limitations, not packet defects. Do not propose another audit cycle.

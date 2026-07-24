@@ -1,0 +1,24 @@
+Act as the final hostile referee for the attached private pre-release
+manuscript. Audit the attached current TeX and final release evidence packet
+from scratch. Do not rely on cached GitHub content or assume that any earlier
+audit, successful TeX build, literature search, or Aristotle run establishes
+mathematical correctness.
+
+Enumerate every numbered mathematical result in the TeX and return PASS,
+REPAIRABLE, or FAIL for each. Check all hypotheses, measurable-selection and
+kernel/Fubini steps, diffuse and nonseparable cases, boundary reconstruction,
+cross-term elimination, compression, and every claimed corollary. Do not
+silently repair gaps.
+
+Separately audit: (1) literature and scope language; (2) verification,
+provenance, authorship, and AI disclosure; and (3) compilation and
+private-release readiness. In particular verify the pre-release wording,
+audit chronology, the distinction between an Aristotle-reported v4.28 build
+and independent replay, the three disclosed headline sorries, the added
+probability-kernel and POVM--UCP citations, the spectrahedra comparison, and
+all supplied hashes.
+
+Return four category verdicts and an OVERALL PASS only if every category
+passes. For any defect, quote the exact sentence or proof step and give the
+smallest sound correction. End with a concise statement of exactly what may
+and may not be claimed publicly if the manuscript is released unchanged.

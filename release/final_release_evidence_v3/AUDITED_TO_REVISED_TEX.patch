@@ -1,0 +1,69 @@
+--- audits/AUDITED_TEX_e5a8c072.tex	2026-07-24 13:30:46
++++ paper/planar_strict_convex_hyperrigidity.tex	2026-07-24 13:36:11
+@@ -26,8 +26,8 @@
+ \author{DannyExperiments}
+ \thanks{The ordinary proof was generated with OpenAI GPT-5.6 Pro.
+ Manuscript preparation, audit coordination, and provenance tooling used
+-OpenAI Codex.  DannyExperiments curated the resulting private pre-release
+-artifact.}
++OpenAI Codex.  DannyExperiments curated the manuscript and associated
++research artifacts.}
+ \date{July 24, 2026}
+ 
+ \begin{document}
+@@ -145,8 +145,8 @@
+ the graph lift when \(\dim\aff K=1\), whereas an original planar \(K\)
+ produces a three-dimensional graph hull.  The scope not covered by those
+ results is precisely arbitrary continuous strictly convex \(g\) on such
+-two-dimensional \(K\), including diffuse representations.  Two independent
+-solution-aware literature searches completed on July~24, 2026 located no
++two-dimensional \(K\), including diffuse representations.  Two separately
++run solution-aware literature searches completed on July~24, 2026 located no
+ prior theorem with that full scope; this negative search is not a claim of
+ historical priority.
+ 
+@@ -698,26 +698,32 @@
+ \section*{Verification and provenance status}
+ 
+ The ordinary proof underlying this manuscript was frozen before review and
+-subjected to multiple independent AI-assisted hostile audits.  An initial
++subjected to multiple separately run AI-assisted hostile audits.  An initial
+ assembled-manuscript audit passed Theorem~\ref{thm:main} and its corollaries
+ while identifying the zero-dimensional and singleton omissions repaired in
+ Lemmas~\ref{lem:energy} and~\ref{lem:interval}.  A subsequent audit of the
+-repaired manuscript passed all fourteen numbered mathematical results and
+-classified the submission as repairable only because of release-metadata
+-defects addressed in this version.  These audits are not human peer review,
+-and specialist review remains pending.
++repaired manuscript passed all fourteen numbered theorem, lemma, and
++corollary statements but classified the submission overall as repairable
++because of documentary, citation, provenance, and release-wording defects
++addressed in this version.  These audits are not human peer review, and
++specialist review remains pending.
+ 
+ The returned Aristotle feasibility project reports a successful build under
+ Lean/mathlib v4.28.0.  Repository scans find no \texttt{sorry},
+ \texttt{admit}, new mathematical axiom, or unsafe escape in its foundational
+-POVM/PVM files, but its exact main theorem and two operator corollaries remain
+-explicit \texttt{sorry} declarations.  Independent replay of that project is
+-pending.  Accordingly, this manuscript does not claim that its main theorem
+-is formally verified.  The source artifacts, audit reports, literature
+-reports, Aristotle return, checksums, and build workflows are preserved in a
+-private pre-release repository at
++POVM/PVM files.  Its declaration \texttt{thm\_main} matches the manuscript
++theorem, while \texttt{cor\_tuple} and \texttt{cor\_square} are stronger
++ambient-space surrogates: they place the compressed tuple and its unital
++functional calculus on the full Hilbert space rather than on
++\(\ran P\).  All three declarations remain explicit \texttt{sorry}
++declarations, and independent replay remains pending.
++Accordingly, this manuscript does not claim that its main theorem or operator
++corollaries are formally verified.  The source artifacts, audit reports,
++literature reports, Aristotle return, checksums, and build workflows are
++preserved in a
++research repository at
+ \url{https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity}.
+-Two independent solution-aware literature searches found the
++Two separately run solution-aware literature searches found the
+ dimension-one case in prior work and located no prior theorem with the full
+ scope of Theorem~\ref{thm:main}; this remains evidence from a negative
+ search, not a claim of historical priority.
