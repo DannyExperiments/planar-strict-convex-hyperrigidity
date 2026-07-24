@@ -1,18 +1,18 @@
 # Release notes — v1.0.0 proof
 
-This release presents an ordinary proof of planar strictly convex
+This release presents a proof of planar strictly convex
 hyperrigidity for compact convex sets of affine dimension at most two.
 
-## Signed-off artifacts
+## Current artifacts and frozen evidence
 
 - TeX:
   `paper/planar_strict_convex_hyperrigidity.tex`
   — SHA-256
-  `1902dc564a0a2fc09cd6a04fa6d56943deae15453b79d9841a3998b462426014`.
+  `cfc0afa438544d100adaae7a69f8d3b0add028e17b36a7824dd3d182d616f315`.
 - PDF:
   `paper/planar_strict_convex_hyperrigidity.pdf`
   — SHA-256
-  `27ffab5e1a5d3ab99f2bbe4f5b44d6c62b4d7d79aa8860627e1a73f5e2edadb1`.
+  `25af39242b0f0f93701cde5a73578f5d58b3a024350580c73168a011945d6466`.
 - Frozen evidence archive:
   `release/planar-strict-convex-hyperrigidity-final-evidence-v4.zip`
   — SHA-256
@@ -24,6 +24,12 @@ hyperrigidity for compact convex sets of affine dimension at most two.
 
 The fresh six-category AI audit returned `OVERALL PASS`. The evidence
 archive was not rebuilt after signoff.
+
+The current TeX and PDF differ from the frozen signed-off manuscript only in
+title-page and provenance presentation: the visible author line and title
+footnote were removed, and the same attribution was placed in the existing
+verification-and-provenance section. No theorem, hypothesis, equation, proof,
+citation, or mathematical remark changed.
 
 ## Claim boundary
 
