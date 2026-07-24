@@ -8,13 +8,15 @@ Current PDF:
 
 `planar_strict_convex_hyperrigidity.pdf`
 
-The PDF is an eight-page A4 artifact freshly compiled by GitHub Actions from
+The PDF is a nine-page A4 artifact freshly compiled by GitHub Actions from
 the current TeX. Its SHA-256 is
-`25af39242b0f0f93701cde5a73578f5d58b3a024350580c73168a011945d6466`.
-It differs from the frozen v4 signed-off PDF only by removing the visible
-title-page author line and moving the same attribution into the existing
-verification-and-provenance section. The frozen signed-off PDF remains
-preserved inside the immutable v4 evidence archive.
+`558bf2d44bea820c8ed425a535a2c10e93845e0142e87eabb9d7400dd97d7112`.
+Relative to the frozen v4 signed-off PDF, the current paper removes the visible
+title-page author line and adds an expository identification of the motivating
+Problem 2, its exact operator formulation, its affirmative resolution, and its
+source citation. No mathematical statement, hypothesis, or proof was changed.
+The frozen signed-off PDF remains preserved inside the immutable v4 evidence
+archive.
 
 Readable in-app copy:
 
