@@ -1,21 +1,17 @@
 # Planar Strictly Convex Hyperrigidity
 
-> **Status: signed-off public release candidate.**
+> **Status: proposed proof; AI-audited; specialist human review pending.**
 >
-> A fresh six-category AI audit of the exact current TeX and frozen
-> v4 evidence archive returned `OVERALL PASS` on mathematics,
-> literature/scope, provenance/authorship/disclosure, reproducibility,
-> formalization boundaries, and public-claim scope. The signed-off archive is
-> immutable; the full-pass report is preserved separately as the post-signoff
-> record. Two solution-aware literature searches found no prior theorem
-> covering the full affine-dimension-two claim, so the paper describes the
-> result as apparently new and does not claim absolute historical priority.
-> Specialist human review is still pending.
-> The returned Aristotle project reports a successful Lean/mathlib v4.28.0
-> build and contains a foundational layer without disclosed proof escapes, but
-> it did not formalize the main theorem or its corollaries; independent replay
-> remains pending. No full Lean verification or absolute historical-priority
-> claim is made.
+> - **Audit:** the exact paper and frozen evidence packet received `OVERALL PASS`.
+> - **Prior art:** two literature searches found no prior theorem with the full
+>   two-dimensional scope; absolute historical priority is not claimed.
+> - **Formalization:** this is not a full Lean verification. The Aristotle return
+>   checks only a foundational layer, not the main theorem or its corollaries.
+
+[Paper (PDF)](paper/planar_strict_convex_hyperrigidity.pdf) ·
+[Full-pass audit](audits/final_corrective_release_signoff_v4_pass.md) ·
+[Release notes](release/RELEASE_NOTES_v1.0.0.md) ·
+[Frozen evidence packet](release/planar-strict-convex-hyperrigidity-final-evidence-v4.zip)
 
 ## Main theorem
 
