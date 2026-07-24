@@ -74,5 +74,5 @@
       Aristotle information.
 - [x] Exact signed-off PDF installed at
       `paper/planar_strict_convex_hyperrigidity.pdf`.
-- [ ] Signed-off release commit pushed and tagged.
-- [ ] Repository made public.
+- [x] Signed-off release commit pushed and tagged.
+- [x] Repository made public.
