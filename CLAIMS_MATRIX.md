@@ -14,7 +14,8 @@
 | Historical priority | Absolute claim that no earlier equivalent exists | Specialist review and broader citation verification | **Pending; no “first” claim** |
 | Human peer review | Specialist review of exact paper | External reviewer | **Pending** |
 | Lean foundations | Arbitrary-Hilbert-space POVM/PVM scalarization and polarization layer | Aristotle return on Lean/mathlib v4.28.0 | **Aristotle-reported compiling and sorry-free; independent replay pending** |
-| Lean verification | Exact arbitrary-Hilbert-space theorem and operator corollaries | New formal infrastructure plus Scherer formalization | **Unformalized; three exact-scope declarations remain `sorry`** |
+| Lean statement scope | `thm_main` matches the arbitrary-Hilbert-space manuscript theorem; `cor_tuple` and `cor_square` are stronger ambient-space surrogates, not the manuscript's `ran P` corollaries | Aristotle return plus scope comparison | **Disclosed exactly; all three declarations remain `sorry`** |
+| Lean verification | Manuscript theorem and operator corollaries | New formal infrastructure plus Scherer formalization and exact `ran P` operator declarations | **Unformalized; no headline Lean proof is claimed** |
 
 ## Forbidden inferences
 
