@@ -9,7 +9,13 @@
 > affine-dimension-two claim. A fresh hostile audit of the repaired manuscript
 > passed all fourteen numbered mathematical results and requested only
 > disclosure, provenance, citation, and release-wording repairs, now
-> incorporated. Specialist human review is still pending.
+> incorporated. A subsequent final release audit again passed every numbered
+> mathematical result and the literature/scope language, but returned
+> `OVERALL REPAIRABLE` because its two-file submission did not include the
+> bytes behind every referenced hash and because three documentary phrases
+> required tightening. The wording repairs are incorporated in the current
+> TeX; a self-contained evidence bundle is being prepared. Specialist human
+> review is still pending.
 > The returned Aristotle project reports a successful Lean/mathlib v4.28.0
 > build and contains a foundational layer without disclosed proof escapes, but
 > it did not formalize the main theorem or its corollaries; independent replay
@@ -65,6 +71,8 @@ PX=XP,\qquad PY=YP.
 
 - `source/` contains immutable canonical ordinary-proof artifacts.
 - `audits/` contains complete hostile-audit returns.
+- `release/` contains the self-contained evidence package prepared in response
+  to the final release audit.
 - `literature/` contains preliminary and final prior-art searches.
 - `paper/` contains the conventional research paper and a generated Markdown
   reading copy.

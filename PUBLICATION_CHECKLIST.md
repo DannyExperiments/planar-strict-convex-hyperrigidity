@@ -14,6 +14,12 @@
 - [x] Fresh audit's disclosure, provenance, and release-wording repairs
       incorporated.
 - [x] Standard probability-kernel and POVM--UCP references added.
+- [x] Final release hostile audit preserved verbatim.
+- [x] Final release audit passed every numbered mathematical result.
+- [x] Final release audit's three documentary wording repairs incorporated
+      without changing mathematics.
+- [ ] Final release audit's self-contained evidence-bundle repair completed.
+- [ ] Narrow documentary re-audit returns `OVERALL PASS`.
 - [ ] Specialist human review obtained.
 
 ## Literature
@@ -35,8 +41,8 @@
 ## Paper and repository
 
 - [x] TeX paper complete.
-- [x] Fresh PDF compiled after the repaired-manuscript audit.
-- [x] Every page of the post-audit PDF visually inspected.
+- [ ] Fresh PDF compiled from the post-final-audit wording revision.
+- [ ] Every page of that revised PDF visually inspected.
 - [x] Hash manifest regenerated after final audit repairs.
 - [x] Verification script passes after final audit repairs.
 - [x] Privacy and credential-pattern scan passes.

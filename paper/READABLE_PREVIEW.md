@@ -2,7 +2,7 @@
 
 > Readable preview generated from the canonical TeX source.
 > It is for reading only; the `.tex` file remains the publication source.
-> Source SHA-256: `e5a8c072a8fc48b4c1df36e078e3395547677910442b42a48bfdb433e95123e9`
+> Source SHA-256: `aab42ddd199eb8553bd74217c343eb54d4e88a669dae2e41964e80373269aba4`
 
 ## Abstract
 
@@ -790,14 +790,15 @@ acting Hilbert space; see
 ## Verification and provenance status
 
 The ordinary proof underlying this manuscript was frozen before review and
-subjected to multiple independent AI-assisted hostile audits.  An initial
+subjected to multiple separately run AI-assisted hostile audits.  An initial
 assembled-manuscript audit passed Theorem `thm:main` and its corollaries
 while identifying the zero-dimensional and singleton omissions repaired in
 Lemmas `lem:energy` and `lem:interval`.  A subsequent audit of the
-repaired manuscript passed all fourteen numbered mathematical results and
-classified the submission as repairable only because of release-metadata
-defects addressed in this version.  These audits are not human peer review,
-and specialist review remains pending.
+repaired manuscript passed all fourteen numbered theorem, lemma, and
+corollary statements but classified the submission overall as repairable
+because of documentary, citation, provenance, and release-wording defects
+addressed in this version.  These audits are not human peer review, and
+specialist review remains pending.
 
 The returned Aristotle feasibility project reports a successful build under
 Lean/mathlib v4.28.0.  Repository scans find no \texttt{sorry},
@@ -807,7 +808,7 @@ explicit \texttt{sorry} declarations.  Independent replay of that project is
 pending.  Accordingly, this manuscript does not claim that its main theorem
 is formally verified.  The source artifacts, audit reports, literature
 reports, Aristotle return, checksums, and build workflows are preserved in a
-private pre-release repository at
+research repository at
 \url{https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity}.
 Two independent solution-aware literature searches found the
 dimension-one case in prior work and located no prior theorem with the full

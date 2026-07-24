@@ -20,18 +20,22 @@ attachments.  They must not be edited.
 | `audits/Artifact_B_hostile_audit_2.md` | Fresh planar extension audit | `67f5c4b32a27c4030ccb3f325cf67bc64e52ca8942fdbcef7da565dfb4e1c24c` |
 | `audits/final_hostile_referee_report.md` | Final manuscript-level hostile audit; attachment wrapper preserved verbatim | `c4c9dd5befe18e0be89eda8e8a389986d07a49e3ee910554e0577bdadd48ff07` |
 | `audits/repaired_manuscript_hostile_audit.md` | Repaired-manuscript hostile audit; all fourteen numbered mathematical results passed | `52cbcb253c3b33089f2c8285c95f29c3545749d8ce094f9522669728b8b15822` |
+| `audits/final_release_hostile_referee_report.md` | Final release audit; mathematics and literature passed, overall documentary verdict repairable | `bafaac66653c744d0224abbec71fd0f40880f016951b9e465e622fb2a85ad5f4` |
 
-All six reports are AI-generated audits, not human referee reports.
+All seven reports are AI-generated audits, not human referee reports.
 
-## Final release audit inputs
+## First final release audit inputs
 
 | Input | Role | SHA-256 |
 |---|---|---|
 | `audits/FINAL_RELEASE_AUDIT_PACKET.md` | Frozen evidence companion for the final fresh audit | `ffb4b46f26e2a147455eac7ea16b550ba356899979887e6b30d4d723aa0ca4d6` |
 | `audits/FINAL_RELEASE_AUDIT_PROMPT.txt` | Copy-paste final hostile-referee prompt | `65dc7a96806974a1cdcd2805044d8f16cb9de753018b126ab4b25a0e133f6419` |
 
-The final referee should receive the current TeX and the evidence packet.
-Earlier audit reports should not be attached, to reduce anchoring.
+These inputs produced the final release report above. The TeX has since
+received only the three documentary wording repairs specified in that report.
+The evidence packet was insufficiently self-contained because it supplied
+hashes without every referenced byte sequence. A complete bundle is prepared
+separately under `release/`.
 
 ## Aristotle record
 
@@ -43,23 +47,24 @@ The Aristotle return contains sorry-free POVM/PVM foundations but leaves
 `thm_main`, `cor_tuple`, and `cor_square` as explicit `sorry` declarations.
 It is not a formal verification of the manuscript theorem.
 
-## Current post-audit release-candidate build
+## Superseded final-audit input build
 
-The current TeX revision was compiled by GitHub Actions workflow run
+The TeX revision submitted to the final release audit was compiled by GitHub
+Actions workflow run
 `30062596744` from private remote commit
 `4b2822bc33cfdea9a7408174d0be0e1b0c101d2e`.
 
 | Build artifact | Identifier or SHA-256 |
 |---|---|
-| Current TeX SHA-256 | `e5a8c072a8fc48b4c1df36e078e3395547677910442b42a48bfdb433e95123e9` |
+| Audited TeX SHA-256 | `e5a8c072a8fc48b4c1df36e078e3395547677910442b42a48bfdb433e95123e9` |
 | GitHub Actions artifact ID | `8585105883` |
 | Artifact ZIP SHA-256 | `058b91a5123366630a5442c4fd653ef796f31bae4f388808fdfd15c6072b8c88` |
 | Compiled PDF SHA-256 | `465709ab87602367fde8bc95c2a829d8d7d19f110a14ffffa0240f17749ec54f` |
 
-The PDF has eight A4 pages. All eight pages were rendered and visually
+That PDF has eight A4 pages. All eight pages were rendered and visually
 inspected on 2026-07-24. No clipping, overlap, broken-glyph, unresolved-
 reference, or bibliography-layout defect was observed. The inspected local
-copy is `output/pdf/planar_strict_convex_hyperrigidity.pdf`; generated
+copy has now been superseded by the post-audit wording revision; generated
 outputs remain untracked.
 
 ## Superseded pre-audit-repair paper build record
@@ -114,8 +119,14 @@ planar compact convex \(K\) with diffuse representations.
    and private-release wording repairs.
 10. The fresh report was preserved verbatim and its valid release repairs
     were incorporated without altering a numbered mathematical result.
-11. Specialist human review and absolute historical-priority review remain
-   pending.
+11. A final release audit passed all numbered mathematical results and the
+    literature/scope language, but returned `OVERALL REPAIRABLE` because the
+    two-file submission was not a self-contained evidence bundle and because
+    three documentary phrases required tightening.
+12. The final release report was preserved verbatim, and its three wording
+    repairs were applied without changing mathematics.
+13. Specialist human review and absolute historical-priority review remain
+    pending.
 
 ## Attribution boundary
 

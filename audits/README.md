@@ -18,6 +18,12 @@ The completed-report files in this directory are immutable audit returns.
   submission as repairable solely because of documentary, citation, and
   private-release wording defects. Those requested repairs are incorporated
   in the current TeX and repository metadata.
+- `final_release_hostile_referee_report.md` is the fresh final release audit.
+  It passed all fourteen numbered theorem, lemma, and corollary statements,
+  the numbered remark, and the literature/scope language. It returned
+  `OVERALL REPAIRABLE` because the two-file audit submission omitted the bytes
+  behind most referenced hashes and because three documentary phrases
+  required tightening. The report is preserved verbatim.
 
 These are AI-generated reports.  They support internal mathematical
 confidence but are not human referee reports.

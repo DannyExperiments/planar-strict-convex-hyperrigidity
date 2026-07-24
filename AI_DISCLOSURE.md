@@ -16,6 +16,14 @@ mathematical results and classified the submission overall as repairable
 because of documentary and release-wording defects. Those defects were
 repaired after preserving the report verbatim.
 
+A later final release audit separately rechecked the current TeX and
+passed all fourteen numbered theorem, lemma, and corollary statements, the
+numbered remark, and the literature/scope language. It returned
+`OVERALL REPAIRABLE` because the two-file submission did not contain the
+bytes behind every provenance hash and because three documentary phrases
+required tightening. That report is preserved verbatim. Its wording repairs
+are incorporated without changing any mathematical statement or proof.
+
 No AI audit is represented as human peer review.  No theorem is represented
 as Lean-verified until the exact formal statement is kernel-checked without
 `sorry`, `admit`, new mathematical axioms, or unsafe escapes.

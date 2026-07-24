@@ -7,8 +7,8 @@
 | Square theorem | \(K=[0,1]^2\), arbitrary continuous strictly convex \(g\) | Artifact A | Passed two audits |
 | Polytope theorem | Compact convex polytope of affine dimension at most two | Artifact A | Passed two audits |
 | Extreme-boundary reconstruction | Arbitrary planar compact convex \(K\) | Scherer's planar boundary theorem and strict Jensen equality | Passed two audits |
-| Main planar theorem | Arbitrary compact convex \(K\), affine dimension at most two | Artifacts A and B; Scherer's planar extreme-boundary theorem | **PASS in repaired-manuscript hostile audit; human specialist review pending** |
-| Operator compression corollary | Commuting self-adjoint tuple with joint spectrum in such \(K\) | Main planar theorem and leakage identity | **PASS in repaired-manuscript hostile audit** |
+| Main planar theorem | Arbitrary compact convex \(K\), affine dimension at most two | Artifacts A and B; Scherer's planar extreme-boundary theorem | **PASS in final release hostile audit; human specialist review pending** |
+| Operator compression corollary | Commuting self-adjoint tuple with joint spectrum in such \(K\) | Main planar theorem and leakage identity | **PASS in final release hostile audit** |
 | One-dimensional prior art | \(\dim\operatorname{aff}K\leq1\), arbitrary continuous strictly convex \(g\), diffuse spectra allowed | Brown 2016; also Scherer after graph lift | **Previously known** |
 | Two-dimensional prior-art search | \(\dim\operatorname{aff}K=2\), arbitrary continuous strictly convex \(g\), arbitrary/diffuse representations | Two independent solution-aware searches through 2026-07-24 | **No prior theorem located; apparently new** |
 | Historical priority | Absolute claim that no earlier equivalent exists | Specialist review and broader citation verification | **Pending; no “first” claim** |
@@ -19,6 +19,8 @@
 ## Forbidden inferences
 
 - AI audit is not human peer review.
+- A mathematical PASS does not convert an overall documentary
+  `REPAIRABLE` verdict into an overall release PASS.
 - Preliminary literature searches do not prove priority.
 - A future finite-dimensional Lean theorem would not verify the full
   arbitrary-Hilbert-space result.
