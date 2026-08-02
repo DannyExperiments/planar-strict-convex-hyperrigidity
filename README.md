@@ -1,6 +1,7 @@
 # Planar Strictly Convex Hyperrigidity
 
 [![Fresh paper build](https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity/actions/workflows/paper.yml/badge.svg?branch=main)](https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity/actions/workflows/paper.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21762465.svg)](https://doi.org/10.5281/zenodo.21762465)
 
 > **Status: proof; AI-audited; specialist human review pending.**
 >
@@ -122,3 +123,11 @@ stronger ambient-space surrogates, not exact formulations of the manuscript
 corollaries on `ran P`.  A successful repository verification run establishes
 source integrity, document hygiene, and the absence of any hidden
 full-formalization claim; it does not prove any headline declaration.
+
+## Citation
+
+For a stable citation to this repository, use the concept DOI
+[10.5281/zenodo.21762465](https://doi.org/10.5281/zenodo.21762465). The exact archived
+release `v1.0.2` is [10.5281/zenodo.21762466](https://doi.org/10.5281/zenodo.21762466). GitHub's
+**Cite this repository** menu reads the machine-readable metadata in
+[`CITATION.cff`](CITATION.cff).
