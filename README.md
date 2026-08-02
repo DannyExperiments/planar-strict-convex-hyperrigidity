@@ -1,5 +1,7 @@
 # Planar Strictly Convex Hyperrigidity
 
+[![Fresh paper build](https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity/actions/workflows/paper.yml/badge.svg?branch=main)](https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity/actions/workflows/paper.yml)
+
 > **Status: proof; AI-audited; specialist human review pending.**
 >
 > - **Audit:** the frozen proof and evidence packet received `OVERALL PASS`;
