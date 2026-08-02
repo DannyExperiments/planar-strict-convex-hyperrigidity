@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this research release, cite it using the metadata below."
+title: "Planar Strictly Convex Hyperrigidity"
+type: software
+version: 1.0.2
+date-released: 2026-08-02
+doi: "10.5281/zenodo.21762465"
+repository-code: "https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity"
+authors:
+  - name: "DannyExperiments"
+preferred-citation:
+  type: article
+  title: "Planar Strictly Convex Hyperrigidity"
+  authors:
+    - name: "DannyExperiments"
+  year: 2026
+  doi: "10.5281/zenodo.21762466"
+  url: "https://github.com/DannyExperiments/planar-strict-convex-hyperrigidity/releases/tag/v1.0.2"
+keywords:
+  - operator theory
+  - hyperrigidity
+  - strictly convex functions
+  - positive operator-valued measures
+  - functional calculus
